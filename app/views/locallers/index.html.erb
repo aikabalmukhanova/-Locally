@@ -1,0 +1,14 @@
+<h2>All available locallers:</h2>
+
+
+
+<% @locallers.each do |localler| %>
+<ul>
+  <li> <%= localler.user.username %> </li>
+  <li> <%= localler.user.bio %> </li>
+  <% localler.activities.each do |activity| %>
+  <li><%= activity.title %></li>
+    <% end %>
+
+</ul>
+<% end %>

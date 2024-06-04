@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_04_121510) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_04_140238) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -41,6 +41,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_04_121510) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "localler_activities_id"
+    t.index ["localler_activities_id"], name: "index_locallers_on_localler_activities_id"
     t.index ["user_id"], name: "index_locallers_on_user_id"
   end
 
@@ -82,6 +84,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_04_121510) do
 
   add_foreign_key "localler_activities", "activities"
   add_foreign_key "localler_activities", "locallers"
+  add_foreign_key "locallers", "localler_activities", column: "localler_activities_id"
   add_foreign_key "locallers", "users"
   add_foreign_key "meetings", "locallers"
   add_foreign_key "meetings", "users"
