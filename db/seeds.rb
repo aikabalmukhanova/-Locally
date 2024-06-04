@@ -7,16 +7,16 @@ User.destroy_all
 puts "Creating users..."
 
 users = [
-  { email: 'guillaume@locally.com', password: '123456' },
-  { email: 'luk@locally.com', password: '123456' },
-  { email: 'mathieu@locally.com', password: '123456' },
-  { email: 'aika@locally.com', password: '123456' },
-  { email: 'pedro@locally.com', password: '123456' },
-  { email: 'bruna@locally.com', password: '123456' },
-  { email: 'aude@locally.com', password: '123456' },
-  { email: 'kenta@locally.com', password: '123456' },
-  { email: 'hugo@locally.com', password: '123456' },
-  { email: 'caroline@locally.com', password: '123456' },
+  { email: 'guillaume@locally.com', password: '123456', username: 'Guillaume', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'luk@locally.com', password: '123456', username: 'Luk', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'mathieu@locally.com', password: '123456', username: 'Mathieu', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'aika@locally.com', password: '123456', username: 'Aika', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'pedro@locally.com', password: '123456', username: 'Pedro', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'bruna@locally.com', password: '123456', username: 'Bruna', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'aude@locally.com', password: '123456', username: 'Aude', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'kenta@locally.com', password: '123456', username: 'Kenta', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'hugo@locally.com', password: '123456', username: 'Hugo', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.' },
+  { email: 'caroline@locally.com', password: '123456' , username: 'Caroline', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.'},
 ]
 
 users.each do |user|

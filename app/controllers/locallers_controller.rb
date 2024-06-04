@@ -1,6 +1,9 @@
 class LocallersController < ApplicationController
-  # uncomment below line once index and show controller actions are defined, so user who is not logged in can still see locallers
-  # skip_before_action :authenticate_user!, only: %i[index show]
+  skip_before_action :authenticate_user!, only: %i[index]
+
+  def index
+    @locallers = Localler.all
+  end
 
   def new
     @localler = Localler.new
