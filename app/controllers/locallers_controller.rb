@@ -16,6 +16,10 @@ class LocallersController < ApplicationController
     end
   end
 
+  def show
+    @localler = Localler.find(params[:id])
+  end
+
   private
 
   def localler_params

@@ -1,0 +1,30 @@
+<div>
+  <div>
+    <img src="" alt="">
+    <h2><%= @localler.user.username %></h2>
+    <p><%= @localler.location %></p>
+  </div>
+  <div>
+    <h2>About me</h2>
+    <p><%= @localler.description %></p>
+  </div>
+  <hr>
+  <div>
+    <h2>Activities I like</h2>
+    <div>
+      <ul>
+        <% @localler.activities.each do |activity| %>
+          <li><%= activity.title %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+    <h2>What other travellers say about me</h2>
+    <div>
+      <ul>
+        <% # iteration of reviews goes here %>
+      </ul>
+  <div>
+  </div>
+  <a href=""></a>
+</div>
