@@ -3,6 +3,13 @@ class LocallersController < ApplicationController
 
   def index
     @locallers = Localler.all
+    # The `geocoded` scope filters only locallers with coordinates
+    @markers = @locallers.geocoded.map do |localler|
+      {
+        lat: localler.latitude,
+        lng: localler.longitude
+      }
+    end
   end
 
   def new

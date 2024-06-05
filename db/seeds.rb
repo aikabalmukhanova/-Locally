@@ -1,5 +1,6 @@
 puts "Cleaning database..."
 
+LocallerActivity.destroy_all
 Activity.destroy_all
 Localler.destroy_all
 User.destroy_all
