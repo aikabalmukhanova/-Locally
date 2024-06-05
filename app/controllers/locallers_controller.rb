@@ -26,6 +26,6 @@ class LocallersController < ApplicationController
   private
 
   def localler_params
-    params.require(:localler).permit(:description, :location, :availability)
+    params.require(:localler).permit(:description, :location, :availability, activity_ids: [])
   end
 end

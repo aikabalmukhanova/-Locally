@@ -2,7 +2,7 @@
   <%= simple_form_for [@localler] do |f| %>
     <%= f.input :description %>
     <%= f.input :location %>
-    <%= f.input :localler_activities %>
+    <%= f.association :activities, as: :check_boxes %>
     <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
 </div>
