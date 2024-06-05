@@ -1,17 +1,31 @@
-<h2>All available locallers:</h2>
+<div class="pages">
 
+<div class="container">
+   
+  <h2><i class="fa-solid fa-arrows-rotate"></i> Locallers around</h2>
 
-<% @activities.each do |activity| %>
-  <%= link_to activity.title, locallers_path(filter: activity.title), class: "btn btn-dark" %>
-<% end %>
+    <div class="pt-4">
+      <% @activities.each do |activity| %>
+        <%= link_to activity.title, locallers_path(filter: activity.title), class: "my-button" %>
+      <% end %>
+    </div>
+    
+    <div style="width: 100%; height: 600px;"
+      data-controller="map"
+      data-map-markers-value="<%= @markers.to_json %>"
+      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
 
-<% @locallers.each do |localler| %>
-<ul>
-  <li> <%= localler.user.username %> </li>
-  <li> <%= localler.user.bio %> </li>
-  <% localler.activities.each do |activity| %>
-  <li><%= activity.title %></li>
-    <% end %>
-
-</ul>
-<% end %>
+    <div>
+      <% @locallers.each do |localler| %>
+        <div class="card-locallers">
+          <h3> <%= localler.user.username %> </h3>
+          <p> <%= localler.user.bio %> </p>
+          <% localler.activities.each do |activity| %>
+          <p class="my-button"><%= activity.title %></p>
+            <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
