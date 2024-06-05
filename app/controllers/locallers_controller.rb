@@ -10,6 +10,7 @@ class LocallersController < ApplicationController
         lat: localler.latitude,
         lng: localler.longitude
       }
+    end
 
     @activities = Activity.all
     if params[:filter].present?
