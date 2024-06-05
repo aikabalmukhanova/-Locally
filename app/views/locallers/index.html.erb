@@ -1,6 +1,9 @@
 <h2>All available locallers:</h2>
 
 
+<% @activities.each do |activity| %>
+  <%= link_to activity.title, locallers_path(filter: activity.title), class: "btn btn-dark" %>
+<% end %>
 
 <% @locallers.each do |localler| %>
 <ul>
