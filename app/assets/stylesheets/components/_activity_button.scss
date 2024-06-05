@@ -1,0 +1,18 @@
+.my-button {
+	background-color: transparent;
+	border-radius: 50px;
+	border: 1px solid #F0EBE5;
+	display: inline-block;
+  cursor: pointer;
+	color: #F0EBE5;
+	font-family: "Inter", sans-serif;
+	font-size: 10px;
+	padding: 8px 10px;
+	text-decoration: none;
+  margin: 5px;
+  margin-top: 10px;
+}
+.my-button:hover {
+	background-color: #F0EBE5;
+  color: #26271F
+}
