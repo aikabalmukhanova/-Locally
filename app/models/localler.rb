@@ -3,5 +3,5 @@ class Localler < ApplicationRecord
   has_many :localler_activities
   has_many :activities, through: :localler_activities
 
-  validates :description, :availability, :location, presence: true
+  validates :description, :location, presence: true
 end
