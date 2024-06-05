@@ -4,16 +4,17 @@ class LocallersController < ApplicationController
   def index
     @locallers = Localler.all
 
+    @activities = Activity.all
+    if params[:filter].present?
+      @locallers = @locallers.joins(:activities).where(activities: { title: params[:filter] })
+    end
+
     # The `geocoded` scope filters only locallers with coordinates
     @markers = @locallers.geocoded.map do |localler|
       {
         lat: localler.latitude,
         lng: localler.longitude
       }
-
-    @activities = Activity.all
-    if params[:filter].present?
-      @locallers = @locallers.joins(:activities).where(activities: {title: params[:filter]})
     end
   end
 
@@ -33,6 +34,12 @@ class LocallersController < ApplicationController
 
   def show
     @localler = Localler.find(params[:id])
+
+    # The `geocoded` scope filters only locallers with coordinates
+    @markers =[{
+        lat: @localler.latitude,
+        lng: @localler.longitude
+      }]
   end
 
   private
