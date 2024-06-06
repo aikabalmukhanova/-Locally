@@ -25,6 +25,12 @@ class LocallersController < ApplicationController
   end
 
   def create
+    # Check if the user has already a localler_id
+    if current_user.localler
+      redirect_to root_path, alert: "You already are a localler ❤️"
+      return
+    end
+
     @localler = Localler.new(localler_params)
     @localler.user = current_user
     if @localler.save
