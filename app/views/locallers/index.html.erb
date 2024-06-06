@@ -1,7 +1,7 @@
 <div class="pages">
 
 <div class="container">
-   
+
   <h2><i class="fa-solid fa-arrows-rotate"></i> Locallers around</h2>
 
     <div class="pt-4">
@@ -9,7 +9,7 @@
         <%= link_to activity.title, locallers_path(filter: activity.title), class: "my-button" %>
       <% end %>
     </div>
-    
+
     <div style="width: 100%; height: 600px;"
       data-controller="map"
       data-map-markers-value="<%= @markers.to_json %>"
@@ -18,14 +18,17 @@
 
     <div>
       <% @locallers.each do |localler| %>
-        <div class="card-locallers">
-          <h3> <%= localler.user.username %> </h3>
-          <p> <%= localler.user.bio %> </p>
-          <% localler.activities.each do |activity| %>
-          <p class="my-button"><%= activity.title %></p>
+        <%= link_to localler_path(localler) do %>
+          <div class="card-locallers">
+            <h3> <%= localler.user.username %> </h3>
+            <p> <%= localler.user.bio %> </p>
+            <% localler.activities.each do |activity| %>
+              <p class="my-button"><%= activity.title %></p>
             <% end %>
-        </div>
+          </div>
+        <% end %>
       <% end %>
     </div>
+
   </div>
 </div>
