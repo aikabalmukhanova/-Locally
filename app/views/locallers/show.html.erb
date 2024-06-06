@@ -1,36 +1,45 @@
-<div>
-  <div>
-    <img src="" alt="">
-    <h2><%= @localler.user.username %></h2>
-    <p><%= @localler.location %></p>
-  </div>
-  <div>
-    <h2>About me</h2>
-    <p><%= @localler.description %></p>
-  </div>
-  <hr>
-  <div>
-    <h2>Activities I like</h2>
-    <div>
-      <ul>
-        <% @localler.activities.each do |activity| %>
-          <li><%= activity.title %></li>
-        <% end %>
-      </ul>
+<div class="pages">
+
+  <div class="container">
+    <div class="d-flex align-items-center m-4">
+      <img src="https://media.licdn.com/dms/image/C4E03AQHo2YkZrhIaJA/profile-displayphoto-shrink_400_400/0/1517020425940?e=1723075200&v=beta&t=_y15h12Ii0wC7QVlyIrrft8heUKd_VFjSpe7-SVzmSs" alt="avatar" class="rounded-circle img-fluid" style="width: 120px; height: 120px">
+      <div class="ms-4">
+        <h3><%= @localler.user.username %></h3>
+        <p class="pt-0"><%= @localler.location %></p>
+      </div>
     </div>
 
-    <% if Chat.where(localler: @localler, user: current_user).any? %>
-      <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "btn btn-dark" %>
-    <% else %>
-      <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "btn btn-dark" %>
-    <% end %>
+    <div>
+      <h3>About me</h3>
+      <p><%= @localler.description %></p>
+    </div>
+
+    <hr class ="line">
+
+    <div>
+      <h3>Activities I like</h3>
+      <div>
+        <ul>
+          <% @localler.activities.each do |activity| %>
+            <li class="my-button"><%= activity.title %></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <% if Chat.where(localler: @localler, user: current_user).any? %>
+        <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "white-button my-4" %>
+      <% else %>
+        <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "white-button my-4" %>
+      <% end %>
+    </div>
+
+
+    <div style="width: 100%; height: 600px;"
+      data-controller="map"
+      data-map-markers-value="<%= @markers.to_json %>"
+      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+    <a href=""></a>
   </div>
 
-
-  <div style="width: 100%; height: 600px;"
-    data-controller="map"
-    data-map-markers-value="<%= @markers.to_json %>"
-    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
-  <a href=""></a>
 </div>
