@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :locallers, only: %i[index show new create edit update]
-  resources :chats, only: :show do
+  resources :chats, only: %i[show create] do
     resources :messages, only: :create
   end
 

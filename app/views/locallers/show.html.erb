@@ -18,7 +18,15 @@
         <% end %>
       </ul>
     </div>
+
+    <% if Chat.where(localler: @localler, user: current_user).any? %>
+      <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "btn btn-dark" %>
+    <% else %>
+      <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "btn btn-dark" %>
+    <% end %>
   </div>
+
+
   <div style="width: 100%; height: 600px;"
     data-controller="map"
     data-map-markers-value="<%= @markers.to_json %>"
