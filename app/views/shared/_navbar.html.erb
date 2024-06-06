@@ -14,7 +14,10 @@
               <% f.submit %>
             <% end %>
             </div>
+          <% else %>
+            <a href=""><%= link_to "Be a Localler", new_localler_path, class: "green-button" %></a>
           <% end %>
+
           <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown">
             <%= image_tag "https://media.licdn.com/dms/image/C4E03AQHo2YkZrhIaJA/profile-displayphoto-shrink_400_400/0/1517020425940?e=1723075200&v=beta&t=_y15h12Ii0wC7QVlyIrrft8heUKd_VFjSpe7-SVzmSs", class: "avatar", alt: "dropdown menu" %>
           </a>
