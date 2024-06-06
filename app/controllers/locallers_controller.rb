@@ -2,7 +2,7 @@ class LocallersController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index]
 
   def index
-    @locallers = Localler.all
+    @locallers = Localler.near(params[:query], 500)
     @activities = Activity.all
     if params[:filter].present?
       @locallers = @locallers.joins(:activities).where(activities: { title: params[:filter] })
@@ -12,6 +12,11 @@ class LocallersController < ApplicationController
       lat: localler.latitude,
       lng: localler.longitude
     }
+    end
+
+    @activities = Activity.all
+    if params[:filter].present?
+      @locallers = @locallers.joins(:activities).where(activities: {title: params[:filter]})
     end
   end
 

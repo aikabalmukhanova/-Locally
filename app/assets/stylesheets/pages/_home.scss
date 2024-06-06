@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+.background {
+  background-image: url("home_background.jpg");
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

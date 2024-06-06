@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="background">
+
+  <div>
+    <%= form_with url: locallers_path, class: "search-input", method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "search-bar",
+        placeholder: "Search location..." %>
+      <%= button_tag(class: "black-button") do %>
+        <i>Confirm location</i>
+      <% end %>
+    <% end %>
+  </div>
+
+
+</div>

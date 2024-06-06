@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :meetings
   has_one :localler
+  has_many :messages
 end
