@@ -30,7 +30,7 @@ class LocallersController < ApplicationController
       redirect_to root_path, alert: "You already are a localler ❤️"
       return
     end
-
+    # Create a new localler
     @localler = Localler.new(localler_params)
     @localler.user = current_user
     if @localler.save
@@ -39,7 +39,7 @@ class LocallersController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-
+ 
   def show
     @chat = Chat.new
     @localler = Localler.find(params[:id])
