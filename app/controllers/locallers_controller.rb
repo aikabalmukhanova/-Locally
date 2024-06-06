@@ -3,18 +3,15 @@ class LocallersController < ApplicationController
 
   def index
     @locallers = Localler.near(params[:query], 500)
-
     @activities = Activity.all
     if params[:filter].present?
       @locallers = @locallers.joins(:activities).where(activities: { title: params[:filter] })
     end
-
-    # The `geocoded` scope filters only locallers with coordinates
-    @markers = @locallers.geocoded.map do |localler|
-      {
-        lat: localler.latitude,
-        lng: localler.longitude
-      }
+    # The `geocoded` scope filters only locallers with coordinates (latitude & longitude)
+    @markers = @locallers.geocoded.map do |localler| {
+      lat: localler.latitude,
+      lng: localler.longitude
+    }
     end
 
     @activities = Activity.all
@@ -41,10 +38,18 @@ class LocallersController < ApplicationController
     @localler = Localler.find(params[:id])
 
     # The `geocoded` scope filters only locallers with coordinates
-    @markers =[{
-        lat: @localler.latitude,
-        lng: @localler.longitude
-      }]
+    @markers = [{
+      lat: @localler.latitude,
+      lng: @localler.longitude
+    }]
+  end
+
+  def update
+    if @localler.update(localler_params)
+      render json: { status: 'success', user: @localler }
+    else
+      render json: { status: 'error', errors: @localler.errors.full_messages }
+    end
   end
 
   private
