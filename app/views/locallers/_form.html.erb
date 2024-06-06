@@ -3,6 +3,7 @@
     <%= f.input :description %>
     <%= f.input :location %>
     <%= f.association :activities, as: :check_boxes %>
+    <%= f.input :availability, as: :boolean, input_html: { class: "toggle" } %>
     <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
 </div>
