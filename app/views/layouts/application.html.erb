@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <% if @home %>
+    <% if @home || @chat %>
       <%= render "shared/navbar2" %>
     <% else %>
       <%= render "shared/navbar" %>

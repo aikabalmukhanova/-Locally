@@ -38,6 +38,7 @@ class LocallersController < ApplicationController
   end
 
   def show
+    @chat = Chat.new
     @localler = Localler.find(params[:id])
 
     # The `geocoded` scope filters only locallers with coordinates
