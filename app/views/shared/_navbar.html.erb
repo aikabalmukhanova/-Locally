@@ -10,8 +10,8 @@
           <% if Localler.where(user: current_user).any? %>
             <div class="form-check form-switch pe-4">
             <%= simple_form_for current_user.localler do |f| %>
-              <%= f.input :availability, as: :boolean, input_html: { class: "toggle" } %>
-              <%= f.submit %>
+              <%= f.input :availability, as: :boolean, label:false, input_html: { class: "toggle" } %>
+              <% f.submit %>
             <% end %>
             </div>
           <% end %>
