@@ -1,5 +1,7 @@
 puts "Cleaning database..."
 
+Message.destroy_all
+Chat.destroy_all
 LocallerActivity.destroy_all
 Activity.destroy_all
 Localler.destroy_all
