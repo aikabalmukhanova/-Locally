@@ -9,6 +9,10 @@ class Message < ApplicationRecord
     @message.chat = Chat.find(params[:chat_id])
   end
 
+  def sender?(a_user)
+    user.id == a_user.id
+  end
+  
   private
 
   def message_params

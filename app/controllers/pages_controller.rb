@@ -4,4 +4,8 @@ class PagesController < ApplicationController
   def home
     @home = true
   end
+
+  def chat
+    @chat = true
+  end
 end
