@@ -6,7 +6,7 @@
 
     <div class="pt-4">
       <% @activities.each do |activity| %>
-        <%= link_to activity.title, locallers_path(filter: activity.title), class: "my-button" %>
+        <%= link_to activity.title, locallers_path(filter: activity.title, query: params[:query]), class: "my-button" %>
       <% end %>
     </div>
 

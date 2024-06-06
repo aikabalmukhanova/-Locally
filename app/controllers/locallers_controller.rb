@@ -13,11 +13,6 @@ class LocallersController < ApplicationController
       lng: localler.longitude
     }
     end
-
-    @activities = Activity.all
-    if params[:filter].present?
-      @locallers = @locallers.joins(:activities).where(activities: {title: params[:filter]})
-    end
   end
 
   def new
