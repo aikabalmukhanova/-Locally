@@ -1,45 +1,47 @@
-<div class="pages">
+<div class="bg-index">
+  <div class="pages">
 
-  <div class="container pb-3">
-    <div class="local-block d-flex align-items-center">
-      <img src="https://avatars.githubusercontent.com/u/162796074?v=4" alt="avatar" class="rounded-circle img-fluid border-1" style="width: 100px; height: 100px">
-      <div class="ms-4">
-        <h3><%= @localler.user.username %></h3>
-        <p class="city"><%= @localler.location %></p>
+    <div class="container pb-3">
+      <div class="local-block d-flex align-items-center">
+        <img src="https://avatars.githubusercontent.com/u/162796074?v=4" alt="avatar" class="rounded-circle img-fluid border-1" style="width: 100px; height: 100px">
+        <div class="ms-4">
+          <h3><%= @localler.user.username %></h3>
+          <p class="city"><%= @localler.location %></p>
+        </div>
       </div>
-    </div>
 
-    <div class="local-bio">
-      <h3>About me</h3>
-      <p><%= @localler.description %></p>
-    </div>
+      <div class="local-bio">
+        <h3>About me</h3>
+        <p><%= @localler.description %></p>
+      </div>
 
-    <hr class ="line">
+      <hr class ="line">
 
-    <div>
-      <h3>Activities I like</h3>
       <div>
-        <ul>
-          <% @localler.activities.each do |activity| %>
-            <li class="my-button"><%= activity.title %></li>
-          <% end %>
-        </ul>
+        <h3>Activities I like</h3>
+        <div>
+          <ul>
+            <% @localler.activities.each do |activity| %>
+              <li class="my-button"><%= activity.title %></li>
+            <% end %>
+          </ul>
+        </div>
+
+        <% if Chat.where(localler: @localler, user: current_user).any? %>
+          <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat mb-4" %>
+        <% else %>
+          <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat mb-4" %>
+        <% end %>
       </div>
 
-      <% if Chat.where(localler: @localler, user: current_user).any? %>
-        <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat mb-4" %>
-      <% else %>
-        <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat mb-4" %>
-      <% end %>
+
+      <div style="width: 100%; height: 300px;"
+        data-controller="map"
+        data-map-markers-value="<%= @markers.to_json %>"
+        data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+      <a href=""></a>
     </div>
 
-
-    <div style="width: 100%; height: 300px;"
-      data-controller="map"
-      data-map-markers-value="<%= @markers.to_json %>"
-      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
-    <a href=""></a>
-  </div>
-
 </div>
