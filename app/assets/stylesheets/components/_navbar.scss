@@ -4,12 +4,20 @@
   height: 60px;
   position: absolute;
   width: 100%;
+  align-items: center;
 }
 
-h3 {
+.nav-item {
+  color: #26271F;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar h3 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 20px;
+  color: #26271F;
+  padding-top: 0;
 }
 
 .form-switch .form-check-input {
