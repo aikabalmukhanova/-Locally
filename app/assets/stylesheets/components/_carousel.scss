@@ -1,0 +1,31 @@
+.carousel {
+  width: 100%; /* Width of carousel */
+  height: fit-content; /* Height of carousel */
+}
+
+.card-carousel-container {
+  width: 100%; /* Width of card container */
+  display: flex; /* Set inline elements */
+  overflow-x: auto; /* Set overflow in horizontal scroll */
+  overflow-y: hidden; /* Hidden overflow in vertical scroll */
+  scroll-snap-type: x mandatory; /* Force the scroll to snap to the start of a scroll-snap area */
+  gap: 5px; /* Set gap between cards */
+  width: calc(100% - 0px);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex: 0 0 calc(100% - 16px); /* Set width of card container */
+}
+
+.card-carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari and Opera */
+}
+
+.card-carousel {
+  min-width: fit-content;
+  height: 40px; /* Set height of card */
+  scroll-snap-align: start; /* Set the element focus position in scroll container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
