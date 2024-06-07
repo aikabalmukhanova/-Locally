@@ -44,7 +44,9 @@ class LocallersController < ApplicationController
     # The `geocoded` scope filters only locallers with coordinates
     @markers = [{
       lat: @localler.latitude,
-      lng: @localler.longitude
+      lng: @localler.longitude,
+      info_window_html: render_to_string(partial: "info_window", locals: { localler: @localler }),
+      marker_html: render_to_string(partial: "marker")
     }]
   end
 
