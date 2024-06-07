@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <% if @home || @chat %>
+    <% if params[:action] == "home" || params[:controller] == "chats" %>
       <%= render "shared/navbar2" %>
     <% else %>
       <%= render "shared/navbar" %>
