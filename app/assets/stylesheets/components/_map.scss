@@ -1,0 +1,38 @@
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-anchor-bottom {
+  padding-bottom: 12px;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: #26271F;
+}
+
+.mapboxgl-popup-content {
+  background-color: #26271F;
+}
+
+.info-window {
+  color: #F0EBE5;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.h3-map{
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #F0EBE5;
+}
