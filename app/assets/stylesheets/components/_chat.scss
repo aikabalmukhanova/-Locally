@@ -1,7 +1,7 @@
 .chatroom {
   background: #F0EBE5;
   margin-top: 9px;
-  height: calc(100vh - 75px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +12,14 @@
     margin-bottom: 0;
     padding: 1rem;
   }
+
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 60px;
+    color: #26271F;
+    }
 
   .messages {
     height: 100%;
@@ -27,4 +35,8 @@
       margin-bottom: 0;
     }
   }
+}
+
+.background-chat {
+  background: #F0EBE5;
 }
