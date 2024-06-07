@@ -1,11 +1,11 @@
-<div class="">
+<div class="messages-index">
 
   <div class="container">
-  <h2>My Messages</h2>
+  <h2 class="pb-4">My Messages</h2>
 
     <% @chats.each do |chat| %>
 
-      <div class="card-chats w-50">
+      <div class="card card-chats w-75">
       <div class="card-body">
         <div class="card-title">
         <%= chat.localler.user.username %>

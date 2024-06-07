@@ -19,3 +19,25 @@
 	background-color: #F0EBE5;
   color: #26271F
 }
+
+
+.my-button-dark {
+	background-color: transparent;
+	border-radius: 50px;
+	border: 1px solid #26271F;
+	display: inline-block;
+  cursor: pointer;
+	color: #26271F;
+	font-family: "Inter", sans-serif;
+	font-size: 10px;
+	padding: 8px 10px;
+	text-decoration: none;
+  margin: 0px;
+  margin-top: 0px;
+}
+
+
+.my-button-dark:hover {
+	background-color: #26271F;
+  color: #F0EBE5
+}
