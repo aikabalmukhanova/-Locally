@@ -1,15 +1,15 @@
 <div class="pages">
 
-  <div class="container">
-    <div class="d-flex align-items-center m-4">
-      <img src="https://media.licdn.com/dms/image/C4E03AQHo2YkZrhIaJA/profile-displayphoto-shrink_400_400/0/1517020425940?e=1723075200&v=beta&t=_y15h12Ii0wC7QVlyIrrft8heUKd_VFjSpe7-SVzmSs" alt="avatar" class="rounded-circle img-fluid" style="width: 120px; height: 120px">
+  <div class="container pb-3">
+    <div class="local-block d-flex align-items-center">
+      <img src="https://avatars.githubusercontent.com/u/162796074?v=4" alt="avatar" class="rounded-circle img-fluid border-1" style="width: 100px; height: 100px">
       <div class="ms-4">
         <h3><%= @localler.user.username %></h3>
-        <p class="pt-0"><%= @localler.location %></p>
+        <p class="city"><%= @localler.location %></p>
       </div>
     </div>
 
-    <div>
+    <div class="local-bio">
       <h3>About me</h3>
       <p><%= @localler.description %></p>
     </div>
@@ -27,14 +27,14 @@
       </div>
 
       <% if Chat.where(localler: @localler, user: current_user).any? %>
-        <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "white-button my-4" %>
+        <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat mb-4" %>
       <% else %>
-        <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "white-button my-4" %>
+        <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat mb-4" %>
       <% end %>
     </div>
 
 
-    <div style="width: 100%; height: 600px;"
+    <div style="width: 100%; height: 300px;"
       data-controller="map"
       data-map-markers-value="<%= @markers.to_json %>"
       data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
