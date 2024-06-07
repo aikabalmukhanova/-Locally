@@ -1,0 +1,28 @@
+.messages-index {
+  background: #F0EBE5;
+  margin-top: 9px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  h1 {
+    border-bottom: 1px solid $gray-200;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 60px;
+    color: #26271F;
+    }
+
+}
+
+.background-messages-index {
+  background: #F0EBE5;
+}

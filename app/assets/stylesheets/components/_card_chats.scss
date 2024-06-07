@@ -1,9 +1,14 @@
 .card-chats {
-  overflow: hidden;
   height: auto;
-  background: #F0EBE5;
-  color: #26271F;
-  padding: 20px;
-  margin-top: 15px;
+  background: #26271F;
+  color: #F0EBE5;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid;
   border-radius: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
