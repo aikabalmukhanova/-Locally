@@ -41,7 +41,7 @@ h2 {
 .line {
   color: #F0EBE5;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .local-block {
@@ -61,7 +61,9 @@ h3 {
   font-weight: 600;
   font-size: 20px;
   color: #F0EBE5;
-  }
+  padding-top: 20px;
+}
+
 
 .container {
     --bs-gutter-x: 2rem;
@@ -84,4 +86,8 @@ h3 {
 
 .mapboxgl-ctrl-bottom-left {
   display: none;
+}
+
+.name-block h3 {
+  padding-top: 0;
 }
