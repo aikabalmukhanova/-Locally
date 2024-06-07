@@ -10,7 +10,9 @@ class LocallersController < ApplicationController
     # The `geocoded` scope filters only locallers with coordinates (latitude & longitude)
     @markers = @locallers.geocoded.map do |localler| {
       lat: localler.latitude,
-      lng: localler.longitude
+      lng: localler.longitude,
+      info_window_html: render_to_string(partial: "info_window", locals: { localler: localler }),
+      marker_html: render_to_string(partial: "marker")
     }
     end
   end
@@ -34,7 +36,7 @@ class LocallersController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
- 
+
   def show
     @chat = Chat.new
     @localler = Localler.find(params[:id])
