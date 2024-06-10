@@ -23,8 +23,9 @@
           </a>
 
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Dashboard", dashboard_path, class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+              <%= link_to "My Profile", dashboard_path, class: "dropdown-item" %>
+              <%= link_to "My Messages", chats_path(@chat), class: "dropdown-item" %>
+              <%= link_to "Log Out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
 
           <% else %>
