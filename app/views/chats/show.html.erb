@@ -1,8 +1,8 @@
 <div class="background-chat">
   <div class="container chatroom"
-  data-controller="chat-subscription"
-  data-chat-subscription-id-value="<%= @chat.id %>"
-  data-chat-subscription-current-user-id-value="<%= current_user.id %>">
+    data-controller="chat-subscription"
+    data-chat-subscription-id-value="<%= @chat.id %>"
+    data-chat-subscription-current-user-id-value="<%= current_user.id %>">
 
     <h2 class="h2-chat">Chat</h2>
 
@@ -27,5 +27,35 @@
       <i class="fa-regular fa-paper-plane pb-3"></i>
     <% end %>
   <% end %>
+
+  <%#  add modal for booking %>
+
+ <% if @localler == current_user.localler %>
+
+  <button type="button" class="green-button-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Meet up with traveller!
+  </button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Meet up with traveller</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for [@localler, @meeting] do |f| %>
+              <%= f.input :time,
+              as: :string,
+              input_html: { data: { controller: "datepicker" } } %>
+              <%= f.input :location, label: "Location" %>
+              <%= f.button :submit, "Confirm", class: "black-button text-light" %>
+            <% end %>
+        </div>
+      </div>
+    </div>
   </div>
+  <% end %>
+  </div>
+
 </div>

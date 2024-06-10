@@ -10,6 +10,7 @@ pin "@popperjs/core", to: "popper.js", preload: true
 pin "@rails/actioncable", to: "@rails--actioncable.js" # @7.0.8
 pin "mapbox-gl" # @3.1.2
 pin "process" # @2.0.1
+pin "flatpickr" # @4.6.13
 pin "@mapbox/mapbox-gl-geocoder", to: "https://ga.jspm.io/npm:@mapbox/mapbox-gl-geocoder@5.0.0/lib/index.js"
 pin "#lib/client.js", to: "https://ga.jspm.io/npm:@mapbox/mapbox-sdk@0.13.7/lib/browser/browser-client.js"
 pin "@mapbox/fusspot", to: "https://ga.jspm.io/npm:@mapbox/fusspot@0.4.0/lib/index.js"
