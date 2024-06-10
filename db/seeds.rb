@@ -2,6 +2,7 @@ require "open-uri"
 
 puts "Cleaning database..."
 
+Meeting.destroy_all
 Message.destroy_all
 Chat.destroy_all
 LocallerActivity.destroy_all
@@ -69,16 +70,16 @@ caroline.save
 
 puts "Creating locallers..."
 
-guillaumel = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Brussels', user: guillaume)
-lukl = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Paris', user: luk)
-mathieul = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Rome', user: mathieu)
-aikal = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Barcelona', user: aika)
-pedrol = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Bilbao', user: pedro)
-brunal = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Madrid', user: bruna)
-audel = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Lisbon', user: aude)
-kental = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Berlin', user: kenta)
-hugol = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'Amsterdam', user: hugo)
-carolinel = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.', availability: true, location: 'London', user: caroline)
+guillaumel = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Brussels', user: guillaume)
+lukl = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Paris', user: luk)
+mathieul = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Rome', user: mathieu)
+aikal = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Barcelona', user: aika)
+pedrol = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Bilbao', user: pedro)
+brunal = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Madrid', user: bruna)
+audel = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Lisbon', user: aude)
+kental = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'Berlin', user: kenta)
+hugol = Localler.create!(description: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.I am a software engineer and I love to travel.', availability: true, location: 'Amsterdam', user: hugo)
+carolinel = Localler.create!(description: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you. I am a software engineer and I love to travel.', availability: true, location: 'London', user: caroline)
 
 puts "Creating localler_activities..."
 
