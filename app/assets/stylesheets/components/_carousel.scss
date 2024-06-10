@@ -11,8 +11,8 @@
   scroll-snap-type: x mandatory; /* Force the scroll to snap to the start of a scroll-snap area */
   gap: 5px; /* Set gap between cards */
   width: calc(100% - 0px);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   flex: 0 0 calc(100% - 16px); /* Set width of card container */
 }
 

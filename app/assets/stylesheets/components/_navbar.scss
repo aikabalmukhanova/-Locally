@@ -7,9 +7,14 @@
   align-items: center;
 }
 
-.nav-item {
+.navbar .nav-item {
   color: #26271F;
   font-family: "Inter", sans-serif;
+  border-radius: 50px;
+  border: 1px solid #26271F;
+  padding: 8px 20px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .navbar h3 {

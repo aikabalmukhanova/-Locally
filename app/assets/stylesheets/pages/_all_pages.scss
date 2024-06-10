@@ -26,8 +26,7 @@ h2 {
   font-weight: 600;
   padding-top: 15px;
   color: #F0EBE5;
-  padding-top: 40px;
-  }
+
 
   .h2-chat {
     font-family: "Inter", sans-serif;
@@ -37,6 +36,7 @@ h2 {
     color: #26271F;
     margin-top: 20px;
   }
+}
 
 .line {
   color: #F0EBE5;
@@ -48,13 +48,14 @@ h2 {
   padding-top: 40px;
   font-family: "Inter", sans-serif;
   color: #F0EBE5;
-  }
+}
 
 .local-bio {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   color: #F0EBE5;
-  }
+  margin-top: 20px;
+}
 
 h3 {
   font-family: "Inter", sans-serif;
@@ -64,16 +65,16 @@ h3 {
   padding-top: 20px;
 }
 
-
 .container {
-    --bs-gutter-x: 2rem;
-  }
+  --bs-gutter-x: 2rem;
+
 
   ul {
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
 
 .city {
   font-style: italic;
@@ -87,6 +88,13 @@ h3 {
 .mapboxgl-ctrl-bottom-left {
   display: none;
 }
+
+li {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #F0EBE5;
+  list-style-type: none;
+  display: inline-flex;
 
 .name-block h3 {
   padding-top: 0;

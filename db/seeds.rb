@@ -8,7 +8,6 @@ Localler.destroy_all
 User.destroy_all
 
 puts "Creating activities..."
-
 museum = Activity.create!(title: 'Museums & Galleries')
 food = Activity.create!(title: 'Eating & Drinking')
 shopping = Activity.create!(title: 'Shopping')
