@@ -1,15 +1,24 @@
 <div class="bg-index">
   <div class="pages">
+
     <div class="container pb-3">
-      <div class="light-dashboard">
+
+      <h2><i class="fa-solid fa-user"></i> My Profile</h2>
+
+      <div class="local-block d-flex align-items-center">
         <%= cl_image_tag current_user.profile_picture.key, class: "rounded-circle img-fluid border-1", style: "width: 100px; height: 100px; object-fit: cover" %>
-        <h2><%= @user.username %></h2>
-        <p><%= @user.email %></p>
+        <div class="ms-4">
+          <h3><%= @user.username %></h3>
+        </div>
       </div>
-      <div class="light-dashboard">
-        <h2>About me</h2>
+
+      <div class="local-bio">
+        <h3 class="pt-2">Bio</h3>
         <p><%= @user.bio %></p>
       </div>
+
+      <%= link_to "Edit", edit_user_registration_path, class: "green-button-become mt-2" %>
     </div>
+
   </div>
 </div>

@@ -12,7 +12,7 @@ class LocallersController < ApplicationController
       lat: localler.latitude,
       lng: localler.longitude,
       info_window_html: render_to_string(partial: "info_window", locals: { localler: localler }),
-      marker_html: render_to_string(partial: "marker")
+      marker_html: render_to_string(partial: "marker", locals: { localler: localler })
     }
     end
   end
@@ -46,14 +46,14 @@ class LocallersController < ApplicationController
       lat: @localler.latitude,
       lng: @localler.longitude,
       info_window_html: render_to_string(partial: "info_window", locals: { localler: @localler }),
-      marker_html: render_to_string(partial: "marker")
+      marker_html: render_to_string(partial: "marker", locals: { localler: @localler })
     }]
   end
 
   def update
     @localler = Localler.find(params[:id])
     @localler.update(localler_params)
-    head :no_content
+    redirect_to request.referrer
   end
 
   private
