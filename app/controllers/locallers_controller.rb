@@ -51,11 +51,9 @@ class LocallersController < ApplicationController
   end
 
   def update
-    if @localler.update(localler_params)
-      render json: { status: 'success', user: @localler }
-    else
-      render json: { status: 'error', errors: @localler.errors.full_messages }
-    end
+    @localler = Localler.find(params[:id])
+    @localler.update(localler_params)
+    head :no_content
   end
 
   private
