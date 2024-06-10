@@ -1,1 +1,5 @@
-<%= image_tag "pin_online.png", height: 28, width: 21, alt: "Logo" %>
+<% if localler.availability == true %>
+  <%= image_tag "pin_online.png", height: 28, width: 21, alt: "Logo" %>
+<% else %>
+  <%= image_tag "pin_offline.png", height: 28, width: 21, alt: "Logo" %>
+<% end %>

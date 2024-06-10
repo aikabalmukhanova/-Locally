@@ -9,6 +9,7 @@ export default class extends Controller {
   }
 
   available(event) {
+    console.log("Available");
     this.element.submit(event)
   }
 }
