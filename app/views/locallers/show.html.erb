@@ -22,16 +22,17 @@
         <div>
           <ul>
             <% @localler.activities.each do |activity| %>
-              <li class="my-button"><%= activity.title %></li>
+              <li><%= activity.title %></li>
             <% end %>
           </ul>
         </div>
-
+        <div class='let-chat'>
         <% if Chat.where(localler: @localler, user: current_user).any? %>
-          <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat mb-4" %>
+          <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat" %>
         <% else %>
-          <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat mb-4" %>
+          <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat" %>
         <% end %>
+        </div>
       </div>
 
 
