@@ -1,21 +1,20 @@
 <div class="messages-index">
-
   <div class="container">
-  <h2 class="pb-4">My Messages</h2>
 
-    
+  <h2><i class="fa-solid fa-envelope"></i> My Messages</h2>
     <% @chats.each do |chat| %>
-
-      <div class="card card-chats w-75">
+      <div class="card card-chats">
       <div class="card-body">
         <div class="card-title">
-        <%= chat.localler.user.username %>
+        <h4 class="fw-bold"><%= chat.localler.user.username %></h4>
+        <p><%= chat.messages.last.present? ? truncate(chat.messages.last.content, length: 80) : "No messages yet" %></p>
         </div>
-        <%= link_to "Open chat", chat_path(chat), class:"my-button" %>
+        <div class="text-center">
+          <%= link_to "Open chat", chat_path(chat), class:"green-button-chat w-100" %>
+        </div>
       </div>
       </div>
-
     <% end %>
-  </div>
 
+  </div>
 </div>
