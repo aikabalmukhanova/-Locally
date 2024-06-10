@@ -8,13 +8,14 @@
       <div class="d-flex align-items-center justify-content-center pe-3">
         <% if user_signed_in? %>
           <% if Localler.where(user: current_user).any? %>
+            <div class="d-flex align-items-center form-check form-switch the-toggle">
               <%= simple_form_for current_user.localler, data: {controller: "availability-toggle"} do |f| %>
-                <%= f.input :availability, as: :boolean, label: nil, input_html: { data: {action: "click->availability-toggle#available"}, class:"toggle"} %>
+                <%= f.input :availability, as: :boolean, label: false, input_html: { data: {action: "click->availability-toggle#available"}} %>
               <% end %>
+            </div>
           <% else %>
             <a href=""><%= link_to "Be a Localler", new_localler_path, class: "green-button-become2" %></a>
           <% end %>
-
           <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown">
             <%= cl_image_tag current_user.profile_picture.key, class: "avatar", alt: "dropdown menu" %>
           </a>
