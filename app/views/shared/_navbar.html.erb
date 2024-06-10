@@ -8,10 +8,9 @@
       <div class="d-flex align-items-center justify-content-center pe-3">
         <% if user_signed_in? %>
           <% if Localler.where(user: current_user).any? %>
-              <li class="tg-list-item">
-                <input class="tgl tgl-flat" id="cb4" type="checkbox" data-controller="availability-toggle" data-action="submit->availability-toggle#available"/>
-                <label class="tgl-btn" for="cb4"></label>
-              </li>
+              <%= simple_form_for current_user.localler, data: {controller: "availability-toggle"} do |f| %>
+                <%= f.input :availability, as: :boolean, label: nil, input_html: { data: {action: "click->availability-toggle#available"}, class:"toggle"} %>
+              <% end %>
           <% else %>
             <a href=""><%= link_to "Be a Localler", new_localler_path, class: "green-button-become2" %></a>
           <% end %>
