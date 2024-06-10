@@ -1,3 +1,5 @@
+require "open-uri"
+
 puts "Cleaning database..."
 
 Message.destroy_all
@@ -28,7 +30,42 @@ bruna = User.create!(email: 'bruna@locally.com', password: '123456', username: '
 aude = User.create!(email: 'aude@locally.com', password: '123456', username: 'Aude', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
 kenta = User.create!(email: 'kenta@locally.com', password: '123456', username: 'Kenta', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
 hugo = User.create!(email: 'hugo@locally.com', password: '123456', username: 'Hugo', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-caroline = User.create!(email: 'caroline@locally.com', password: '123456' , username: 'Caroline', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+caroline = User.create!(email: 'caroline@locally.com', password: '123456', username: 'Caroline', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+
+puts "Loading profile pics..."
+
+avatar_guillaume = URI.open("https://avatars.githubusercontent.com/u/166691058?v=4")
+avatar_luk = URI.open("https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1713302532/jxs9twp0kbtmkk73nwbt.jpg")
+avatar_mathieu = URI.open("https://avatars.githubusercontent.com/u/167092397?v=4")
+avatar_aika = URI.open("https://avatars.githubusercontent.com/u/108080915?v=4")
+avatar_pedro = URI.open("https://avatars.githubusercontent.com/u/166991937?v=4")
+avatar_bruna = URI.open("https://avatars.githubusercontent.com/u/162796074?v=4")
+avatar_aude = URI.open("https://avatars.githubusercontent.com/u/163596389?v=4")
+avatar_kenta = URI.open("https://avatars.githubusercontent.com/u/166846379?v=4")
+avatar_hugo = URI.open("https://avatars.githubusercontent.com/u/167010398?v=4")
+avatar_caroline = URI.open("https://avatars.githubusercontent.com/u/135339304?v=4")
+
+guillaume.profile_picture.attach(io: avatar_guillaume, filename: "guy", content_type: "image/png")
+luk.profile_picture.attach(io: avatar_luk, filename: "luk", content_type: "image/jpg")
+mathieu.profile_picture.attach(io: avatar_mathieu, filename: "mathieu", content_type: "image/png")
+aika.profile_picture.attach(io: avatar_aika, filename: "aika", content_type: "image/png")
+pedro.profile_picture.attach(io: avatar_pedro, filename: "pedro", content_type: "image/png")
+bruna.profile_picture.attach(io: avatar_bruna, filename: "bruna", content_type: "image/png")
+aude.profile_picture.attach(io: avatar_aude, filename: "aude", content_type: "image/png")
+kenta.profile_picture.attach(io: avatar_kenta, filename: "kenta", content_type: "image/png")
+hugo.profile_picture.attach(io: avatar_hugo, filename: "hugo", content_type: "image/png")
+caroline.profile_picture.attach(io: avatar_caroline, filename: "caroline", content_type: "image/png")
+
+guillaume.save
+luk.save
+mathieu.save
+aika.save
+pedro.save
+bruna.save
+aude.save
+kenta.save
+hugo.save
+caroline.save
 
 puts "Creating locallers..."
 

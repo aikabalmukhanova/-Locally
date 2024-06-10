@@ -8,4 +8,5 @@ class User < ApplicationRecord
   has_one :localler
   has_many :messages
   has_many :chats
+  has_one_attached :profile_picture
 end

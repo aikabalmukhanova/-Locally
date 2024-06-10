@@ -2,7 +2,7 @@
   <div class="pages">
     <div class="container pb-3">
       <div class="light-dashboard">
-        <img src="" alt="">
+        <%= cl_image_tag current_user.profile_picture.key, class: "rounded-circle img-fluid border-1", style: "width: 100px; height: 100px; object-fit: cover" %>
         <h2><%= @user.username %></h2>
         <p><%= @user.email %></p>
       </div>
