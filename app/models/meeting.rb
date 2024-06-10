@@ -2,5 +2,5 @@ class Meeting < ApplicationRecord
   belongs_to :user
   belongs_to :localler
 
-  validates :start_date, :end_date, :location, presence: true
+  validates :time, :location, presence: true
 end

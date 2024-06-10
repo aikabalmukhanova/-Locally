@@ -10,3 +10,4 @@ pin "@popperjs/core", to: "popper.js", preload: true
 pin "@rails/actioncable", to: "@rails--actioncable.js" # @7.0.8
 pin "mapbox-gl" # @3.1.2
 pin "process" # @2.0.1
+pin "flatpickr" # @4.6.13
