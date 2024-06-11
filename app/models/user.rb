@@ -9,4 +9,7 @@ class User < ApplicationRecord
   has_many :messages
   has_many :chats
   has_one_attached :profile_picture
+
+  validates :username, uniqueness: true
+  validates :bio, length: { minimum: 130, maximum: 500 }
 end
