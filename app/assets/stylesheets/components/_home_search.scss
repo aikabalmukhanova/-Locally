@@ -20,8 +20,6 @@
 .mapboxgl-ctrl-geocoder--input {
   padding: 0px 30px;
   height: 30px;
-  color: #F0EBE5;
-  box-sizing: none;
 }
 
 .mapboxgl-ctrl-geocoder .mapboxgl-ctrl {
@@ -39,3 +37,6 @@
   flex-direction: column;
 }
 
+.mapboxgl-ctrl-geocoder--icon {
+ fill: #F0EBE5;
+}
