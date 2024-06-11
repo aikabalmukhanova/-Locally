@@ -4,11 +4,11 @@ class MeetingsController < ApplicationController
     @localler = Localler.find(params[:localler_id])
     @meeting.localler = @localler
     @meeting.user = current_user
-    @chat = Chat.find(params[:chat_id])
+    @chat = Chat.find(params[:meeting][:chat_id].to_i)
     if @meeting.save
       redirect_to chat_path(@chat)
     else
-      render 'chat/show', notice: 'Something went wrong with your booking. Please try again.', status: :unprocessable_entity
+      render 'chats/show', notice: 'Something went wrong with your booking. Please try again.', status: :unprocessable_entity
     end
   end
 
