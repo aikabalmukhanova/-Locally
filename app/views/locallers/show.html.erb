@@ -3,7 +3,7 @@
 
     <div class="container pb-3">
       <div class="local-block d-flex align-items-center">
-        <%= cl_image_tag current_user.profile_picture.key, alt: "avatar", class: "rounded-circle img-fluid border-1", style: "width: 100px; height: 100px; object-fit: cover" %>
+        <%= cl_image_tag @localler.user.profile_picture.key, alt: "avatar", class: "rounded-circle img-fluid border-1", style: "width: 100px; height: 100px; object-fit: cover" %>
         <div class="ms-4">
           <h3><%= @localler.user.username %></h3>
           <p class="city"><%= @localler.location %></p>
