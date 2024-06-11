@@ -21,22 +21,20 @@
         <% @locallers.each do |localler| %>
           <%= link_to localler_path(localler) do %>
             <div class="card-locallers d-flex">
-              <%= cl_image_tag localler.user.profile_picture.key, class: "avatar", alt: "profile picture" %>
-              <div>
+            <%= cl_image_tag localler.user.profile_picture.key, class: "avatar-card", alt: "profile picture" %>
+              <div class="card-info">
                 <div class="d-flex justify-content-between align-items-top mb-2">
                   <div>
                     <h3 id="name-card-index-page"><%= localler.user.username %> - <%= localler.location %></h3>
                   </div>
-                  <div>
                     <% if (localler.availability) == true %>
                       <i class="fa-solid fa-circle" id="available-green"></i>
                     <% else %>
                       <i class="fa-solid fa-circle" id="available-orange"></i>
                     <% end %>
-                  </div>
                 </div>
                 <div>
-                  <p> <%= localler.user.bio %> </p>
+                  <p> <%= localler.description %> </p>
                 </div>
                 <div>
                   <% localler.activities.each_with_index do |activity, i| %>

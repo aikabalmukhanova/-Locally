@@ -1,14 +1,14 @@
 <div class="navbar sticky-top navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <h3 class="m-0 ps-3">Locally</h3>
+      <h3 class="m-0">Locally</h3>
     <% end %>
 
     <div>
-      <div class="d-flex align-items-center justify-content-center pe-3">
+      <div class="d-flex align-items-center justify-content-center">
         <% if user_signed_in? %>
           <% if Localler.where(user: current_user).any? %>
-            <div class="d-flex align-items-center form-check form-switch the-toggle">
+            <div class="d-flex flex-column align-items-center form-switch the-toggle me-2">
               <p class="toggle-title">available</p>
               <%= simple_form_for current_user.localler, data: {controller: "availability-toggle"} do |f| %>
                 <%= f.input :availability, as: :boolean, label: false, input_html: { data: {action: "click->availability-toggle#available"}} %>

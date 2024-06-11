@@ -1,18 +1,18 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: #F0EBE5;
-  height: 60px;
+  height: fit-content;
   position: sticky;
   width: 100%;
   align-items: center;
 }
 
-navbar- .nav-item {
+navbar .nav-item {
   color: #26271F;
   font-family: "Inter", sans-serif;
   border-radius: 50px;
   border: 1px solid #26271F;
-  padding: 8px 20px;
+  padding: 8px;
   display: inline-block;
   text-decoration: none;
 }
@@ -28,12 +28,12 @@ navbar- .nav-item {
 .form-switch .form-check-input {
   height: 24px;
   width: 48px;
-  margin-right: 10px;
-  
   background-color: #D56f47;
   outline: 0;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(240,235,229,1.0)'/></svg>");
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .form-switch .form-check-input:focus {
@@ -55,4 +55,24 @@ navbar- .nav-item {
 
 .form-check-input {
   border: none;
+  margin-top: 0;
+}
+
+.form-check .form-check-input {
+  padding-left: 0;
+}
+
+.toggle-title {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  color: #26271F;
+  margin-bottom: 0;
+}
+
+.form-check {
+  padding-left: 0;
+}
+
+.optional {
+  margin-bottom: 0 !important;
 }
