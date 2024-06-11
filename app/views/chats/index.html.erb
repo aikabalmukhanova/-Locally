@@ -17,6 +17,11 @@
           </div>
           <div class="text-center">
             <%= link_to "Open chat", chat_path(chat), class:"green-button-chat w-100" %>
+            <% if current_user == chat.user %>
+              <%= link_to "See Profile", profile_path(chat.localler.user), class:"black-button-chat w-100" %>
+            <% else %>
+              <%= link_to "See Profile", profile_path(chat.user), class:"black-button-chat w-100" %>
+            <% end %>
           </div>
         </div>
         </div>
