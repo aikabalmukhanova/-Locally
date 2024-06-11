@@ -3,7 +3,8 @@ class Localler < ApplicationRecord
   has_many :localler_activities
   has_many :activities, through: :localler_activities
   has_many :chats
-
+  has_many :meetings
+  
   validates :description, :location, presence: true
   validates :description, length: { minimum: 130, maximum: 500 }
   geocoded_by :location
