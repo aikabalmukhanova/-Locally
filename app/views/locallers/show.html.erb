@@ -27,11 +27,13 @@
           </ul>
         </div>
         <div class='let-chat'>
-        <% if Chat.where(localler: @localler, user: current_user).any? %>
-          <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat" %>
-        <% else %>
-          <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat" %>
-        <% end %>
+         <% if @localler.user != current_user %>
+            <% if Chat.where(localler: @localler, user: current_user).any? %>
+              <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat" %>
+            <% else %>
+              <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat" %>
+            <% end %>
+          <% end %>
         </div>
       </div>
 

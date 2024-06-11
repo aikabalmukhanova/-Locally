@@ -12,6 +12,6 @@ Rails.application.routes.draw do
     resources :messages, only: :create
   end
 
-  get '/dashboard', to: 'dashboards#show'
+  get '/dashboard', to: 'dashboards#profile'
 
 end
