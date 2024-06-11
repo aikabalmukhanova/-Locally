@@ -28,3 +28,13 @@
   align-items: center;
   display: flex;
 }
+
+.mapboxgl-ctrl-geocoder--button {
+  background: transparent;
+}
+
+.suggestions li {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}

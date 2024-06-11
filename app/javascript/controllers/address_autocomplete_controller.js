@@ -12,7 +12,7 @@ export default class extends Controller {
 
     this.geocoder = new MapboxGeocoder({
       accessToken: this.apiKeyValue,
-      types: "country,region,place,postcode,locality,neighborhood,address",
+      types: "country,region,postcode,locality,address",
       placeholder: 'Search for Location...'
     })
 
@@ -27,6 +27,10 @@ export default class extends Controller {
 
   #clearInputValue() {
     this.addressTarget.value = ""
+  }
+
+  disconnect() {
+    this.geocoder.onRemove()
   }
 
 }
