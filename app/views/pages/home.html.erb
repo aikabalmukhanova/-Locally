@@ -1,17 +1,17 @@
 <div class="background">
 
-  <%= form_with url: locallers_path, class: "search-input", method: :get do %>
-    <div class="auto-complete" data-controller="address-autocomplete" data-address-autocomplete-api-key-value="<%= ENV["MAPBOX_API_KEY"] %>">
+  <div>
+    <h1 class="text-center mb-3">Locally</h1>
+    <%= form_with url: locallers_path, class: "search-input", method: :get do %>
+      <div class="auto-complete" data-controller="address-autocomplete" data-address-autocomplete-api-key-value="<%= ENV["MAPBOX_API_KEY"] %>">
         <%= text_field_tag :query,
           params[:query],
           class: "d-none",
           data: {address_autocomplete_target: "address"} %>
-
       </div>
       <%= button_tag(type: 'submit', class: "black-button") do %>
         <i>Confirm</i>
       <% end %>
-
-  <% end %>
-
+    <% end %>
+  </div>
 </div>

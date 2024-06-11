@@ -9,6 +9,7 @@
         <% if user_signed_in? %>
           <% if Localler.where(user: current_user).any? %>
             <div class="d-flex align-items-center form-check form-switch the-toggle">
+              <p class="toggle-title">available</p>
               <%= simple_form_for current_user.localler, data: {controller: "availability-toggle"} do |f| %>
                 <%= f.input :availability, as: :boolean, label: false, input_html: { data: {action: "click->availability-toggle#available"}} %>
               <% end %>

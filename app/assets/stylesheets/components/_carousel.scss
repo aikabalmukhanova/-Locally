@@ -1,6 +1,7 @@
 .carousel {
   width: 100%; /* Width of carousel */
   height: fit-content; /* Height of carousel */
+  padding-top: 10px;
 }
 
 .card-carousel-container {
@@ -21,8 +22,7 @@
 }
 
 .card-carousel {
-  min-width: fit-content;
-  height: 40px; /* Set height of card */
+  min-width: fit-content; /* Set height of card */
   scroll-snap-align: start; /* Set the element focus position in scroll container */
   display: flex;
   justify-content: center;
