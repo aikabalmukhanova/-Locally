@@ -1,0 +1,23 @@
+<div class="bg-index">
+  <div class="pages">
+
+    <div class="container pb-3">
+
+      <h2><i class="fa-solid fa-user"></i> My Profile</h2>
+
+      <div class="local-block d-flex align-items-center">
+        <%= cl_image_tag @user.profile_picture.key, class: "rounded-circle img-fluid border-1", style: "width: 100px; height: 100px; object-fit: cover" %>
+        <div class="ms-4">
+          <h3><%= @user.username %></h3>
+        </div>
+      </div>
+
+      <div class="local-bio">
+        <h3 class="pt-2">Bio</h3>
+        <p><%= @user.bio %></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

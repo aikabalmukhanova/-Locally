@@ -2,7 +2,7 @@ class DashboardsController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    # @user = User.find(params[???])
+    @user = User.find(params[:id])
     # this will be a user's public profile page
   end
 
