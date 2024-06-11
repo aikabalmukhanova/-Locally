@@ -1,8 +1,7 @@
 <div class="background">
 
   <div>
-    <h1 class="text-center mb-3">Locally</h1>
-    <%= form_with url: locallers_path, class: "search-input", method: :get do %>
+     <%= form_with url: locallers_path, class: "search-input", method: :get do %>
       <div class="auto-complete" data-controller="address-autocomplete" data-address-autocomplete-api-key-value="<%= ENV["MAPBOX_API_KEY"] %>">
         <%= text_field_tag :query,
           params[:query],
