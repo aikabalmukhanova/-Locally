@@ -3,8 +3,8 @@ class MeetingsController < ApplicationController
     @meeting = Meeting.new(meeting_params)
     @localler = Localler.find(params[:localler_id])
     @meeting.localler = @localler
-    @meeting.user = current_user
     @chat = Chat.find(params[:meeting][:chat_id].to_i)
+    @meeting.user = @chat.user
     if @meeting.save
       redirect_to chat_path(@chat)
     else
