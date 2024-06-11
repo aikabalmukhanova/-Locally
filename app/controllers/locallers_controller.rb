@@ -3,6 +3,7 @@ class LocallersController < ApplicationController
 
   def index
     @locallers = Localler.near(params[:query], 500)
+    @locallers = Localler.all if @locallers.empty?
     @activities = Activity.all
     if params[:filter].present?
       @locallers = @locallers.joins(:activities).where(activities: { title: params[:filter] })
