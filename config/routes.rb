@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users do
+    resources :meetings, only: %i[create]
+  end
+
   root to: "pages#home"
 
   resources :locallers, only: %i[index show new create edit update] do
@@ -14,5 +17,4 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: 'dashboards#profile'
   get '/dashboard/:id', to: 'dashboards#show', as: "profile"
-
 end

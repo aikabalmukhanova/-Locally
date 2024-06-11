@@ -6,6 +6,16 @@
 
     <h2 class="h2-chat">Chat</h2>
 
+    <% if @localler == current_user.localler %>
+      <div class="meeting-notice">
+        <p>You're meeting <%= @user.username %> on <%= current_user.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= current_user.meetings.last.location %></p>
+      </div>
+    <% else %>
+      <div class="meeting-notice">
+        <p>You're meeting <%= @localler.user.username %> on <%= @localler.user.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @localler.user.meetings.last.location %></p>
+      </div>
+    <% end %>
+
     <div class="messages" data-chat-subscription-target="messages">
       <% @chat.messages.each do |message| %>
         <div class="message-row d-flex <%= message.sender?(current_user) ? 'justify-content-end' : 'justify-content-start' %>">
@@ -33,14 +43,13 @@
  <% if @localler == current_user.localler %>
 
   <button type="button" class="green-button-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Meet up with traveller!
+    Meet up with <%= @user.username %>!
   </button>
-
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Meet up with traveller</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm your meet up with <%= @user.username %>:</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -48,6 +57,7 @@
               <%= f.input :time,
               as: :string,
               input_html: { data: { controller: "datepicker" } } %>
+              <%= f.hidden_field :chat_id, value: @chat.id %>
               <%= f.input :location, label: "Location" %>
               <%= f.button :submit, "Confirm", class: "black-button text-light" %>
             <% end %>
