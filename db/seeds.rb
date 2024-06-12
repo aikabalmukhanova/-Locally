@@ -90,7 +90,6 @@ lara_silva = User.create!(email: 'lara.silva@locally.com', password: '123456', u
 mikhail_ivanov = User.create!(email: 'mikhail.ivanov@locally.com', password: '123456', username: 'Mikhail Ivanov', bio: "History and art lover from Saint Petersburg, passionate about sharing Russian culture.")
 anna_petrova = User.create!(email: 'anna.petrova@locally.com', password: '123456', username: 'Anna Petrova', bio: "Food and nightlife enthusiast from Moscow, eager to show you the city's vibrant scene.")
 diego_santos = User.create!(email: 'diego.santos@locally.com', password: '123456', username: 'Diego Santos', bio: "Outdoor enthusiast from São Paulo, ready to show you the city's natural beauty.")
-carmen_lopez = User.create!(email: 'carmen.lopez@locally.com', password: '123456', username: 'Carmen Lopez', bio: "Art and shopping lover from Madrid, eager to share the city's cultural and retail gems.")
 yusuf_ali = User.create!(email: 'yusuf.ali@locally.com', password: '123456', username: 'Yusuf Ali', bio: "Food and nightlife lover from Istanbul, ready to show you the city's vibrant scene.")
 lucas_martinez = User.create!(email: 'lucas.martinez2@locally.com', password: '123456', username: 'lucas_martinezl', bio: "History and museum enthusiast from Mexico City, passionate about sharing the city's rich cultural heritage.")
 elena_kuznetsova = User.create!(email: 'elena.kuznetsova@locally.com', password: '123456', username: 'Elena Kuznetsova', bio: "Outdoor enthusiast from Oslo, passionate about exploring nature.")
@@ -568,7 +567,6 @@ lara_silval = Localler.create!(description: "Lisbon is a city of culinary deligh
 mikhail_ivanovl = Localler.create!(description: "St. Petersburg is a city rich in history and art. Let me guide you through its world-class museums, stunning architecture, and vibrant cultural scene.", availability: true, location: "123 Nevsky Prospect, Saint Petersburg, Russia", user: mikhail_ivanov)
 anna_petroval = Localler.create!(description: "Moscow is a city that never sleeps, with a vibrant food and nightlife scene. Let me guide you through its diverse culinary offerings and lively bars and clubs.", availability: true, location: "456 Arbat Street, Moscow, Russia", user: anna_petrova)
 diego_santosl = Localler.create!(description: "São Paulo offers breathtaking natural beauty and outdoor activities. Join me to explore its parks, gardens, and scenic spots for an unforgettable outdoor adventure.", availability: true, location: "123 Ibirapuera Park, São Paulo, Brazil", user: diego_santos)
-carmen_lopezl = Localler.create!(description: "Madrid is a hub of art and culture. Let me guide you through its vibrant art scene, from street art to world-class galleries, and explore the best shopping districts for unique finds.", availability: true, location: "789 Gran Vía, Madrid, Spain", user: carmen_lopez)
 yusuf_alil = Localler.create!(description: "Istanbul is a city of flavors and rhythms. Let me guide you through its diverse culinary offerings and lively nightlife spots for an unforgettable experience.", availability: true, location: "123 Istiklal Avenue, Istanbul, Turkey", user: yusuf_ali)
 lucas_martinezl = Localler.create!(description: "Mexico City is a treasure trove of history and culture. Join me to explore its magnificent museums, archaeological sites, and historic neighborhoods that tell the story of Mexico.", availability: true, location: "456 Zocalo, Mexico City, Mexico", user: lucas_martinez)
 elena_kuznetsoval = Localler.create!(description: "Oslo offers stunning outdoor experiences, from hiking in Nordmarka forest to sailing in Oslofjord. Join me for an adventure in the heart of nature.", availability: true, location: "123 Karl Johans Gate, Oslo, Norway", user: elena_kuznetsova)
@@ -846,9 +844,6 @@ localler_activities = [
   { localler: diego_santosl, activity: outdoors },
   { localler: diego_santosl, activity: unique },
   { localler: diego_santosl, activity: history },
-  { localler: carmen_lopezl, activity: art },
-  { localler: carmen_lopezl, activity: shopping },
-  { localler: carmen_lopezl, activity: museum },
   { localler: yusuf_alil, activity: food },
   { localler: yusuf_alil, activity: nightlife },
   { localler: yusuf_alil, activity: unique },
