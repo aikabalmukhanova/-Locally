@@ -1,5 +1,5 @@
 class LocallersController < ApplicationController
-  skip_before_action :authenticate_user!, only: %i[index]
+  skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
     @locallers = Localler.near(params[:query], 500)
@@ -46,7 +46,7 @@ class LocallersController < ApplicationController
     @markers = [{
       lat: @localler.latitude,
       lng: @localler.longitude,
-      info_window_html: render_to_string(partial: "info_window", locals: { localler: @localler }),
+      info_window_html: "",
       marker_html: render_to_string(partial: "marker", locals: { localler: @localler })
     }]
   end
