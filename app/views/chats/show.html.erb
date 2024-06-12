@@ -1,75 +1,78 @@
 <div class="background-chat">
-  <div class="container chatroom"
-    data-controller="chat-subscription"
-    data-chat-subscription-id-value="<%= @chat.id %>"
-    data-chat-subscription-current-user-id-value="<%= current_user.id %>">
+  <div class="pages">
+    <div class="container chatroom"
+      data-controller="chat-subscription"
+      data-chat-subscription-id-value="<%= @chat.id %>"
+      data-chat-subscription-current-user-id-value="<%= current_user.id %>">
 
-    <h2 class="h2-chat">Chat</h2>
+      <h2><%= @localler.user.username %></h2>
+
+        <% if @localler == current_user.localler && current_user.localler.meetings.where(user: @user).any? %>
+          <div class="meeting-notice">
+            <p>You're meeting <%= @user.username %> on <%= current_user.localler.meetings.where(user: @user).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= current_user.localler.meetings.where(user: @user).last.location %></p>
+          </div>
+        <% end %>
+
+        <% if @localler != current_user.localler && @user.meetings.where(localler: @localler).any? %>
+          <div class="meeting-notice">
+            <p>You're meeting <%= @localler.user.username %> on <%= @user.meetings.where(localler: @localler).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @user.meetings.where(localler: @localler).last.location %></p>
+          </div>
+        <% end %>
 
 
-      <% if @localler == current_user.localler && current_user.localler.meetings.where(user: @user).any? %>
-        <div class="meeting-notice">
-          <p>You're meeting <%= @user.username %> on <%= current_user.localler.meetings.where(user: @user).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= current_user.localler.meetings.where(user: @user).last.location %></p>
-        </div>
-      <% end %>
+      <div class="messages" data-chat-subscription-target="messages">
+        <% @chat.messages.each do |message| %>
+          <div class="message-row d-flex <%= message.sender?(current_user) ? 'justify-content-end' : 'justify-content-start' %>">
+            <div class="<%= message.sender?(current_user) ? 'sender-style' : 'receiver-style' %>">
+              <%= render "messages/message", message: message %>
+            </div>
+          </div>
+        <% end %>
+      </div>
 
-      <% if @localler != current_user.localler && @user.meetings.where(localler: @localler).any? %>
-        <div class="meeting-notice">
-          <p>You're meeting <%= @localler.user.username %> on <%= @user.meetings.where(localler: @localler).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @user.meetings.where(localler: @localler).last.location %></p>
-        </div>
-      <% end %>
+      <div>
+        <%= simple_form_for [@chat, @message],
+        html: { data: { controller: "message-form", action: "turbo:submit-end->chat-subscription#resetForm" }, class: "mb-3 d-flex justify-content-center" } do |f| %>
+        <%= f.input :content,
+          label: false,
+          placeholder: "Message...",
+          wrapper_html: {class: "flex-grow-1 rounded-4 align-content-center", id: "message-send"},
+          input_html: {class: "message-input-content", data: { action: "input->message-form#toggleButton", message_form_target: "input" }}
+        %>
+          <%= f.button :button, id: "send-button", data: { message_form_target: "button" }, disabled: true do %>
+            <i class="fa-regular fa-paper-plane"></i>
+          <% end %>
+        <% end %>
+      </div>
+    <%#  add modal for booking %>
 
+      <% if @localler == current_user.localler %>
 
-    <div class="messages" data-chat-subscription-target="messages">
-      <% @chat.messages.each do |message| %>
-        <div class="message-row d-flex <%= message.sender?(current_user) ? 'justify-content-end' : 'justify-content-start' %>">
-          <div class="<%= message.sender?(current_user) ? 'sender-style' : 'receiver-style' %>">
-            <%= render "messages/message", message: message %>
+      <button type="button" class="green-button-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Meet up with <%= @user.username %>!
+      </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm your meet up with <%= @user.username %>:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <%= simple_form_for [@localler, @meeting] do |f| %>
+                    <%= f.input :time,
+                    as: :string,
+                    input_html: { data: { controller: "datepicker" } } %>
+                    <%= f.hidden_field :chat_id, value: @chat.id %>
+                    <%= f.input :location, label: "Location" %>
+                    <%= f.button :submit, "Confirm", class: "black-button text-light" %>
+                  <% end %>
+              </div>
+            </div>
           </div>
         </div>
       <% end %>
     </div>
-
-    <%= simple_form_for [@chat, @message],
-    html: { data: { action: "turbo:submit-end->chat-subscription#resetForm" }, class: "d-flex align-items-center" } do |f| %>
-    <%= f.input :content,
-      label: false,
-      placeholder: "Message...",
-      wrapper_html: {class: "flex-grow-1 rounded-4"}
-    %>
-    <%= f.button :button do %>
-      <i class="fa-regular fa-paper-plane pb-3"></i>
-    <% end %>
-  <% end %>
-
-  <%#  add modal for booking %>
-
- <% if @localler == current_user.localler %>
-
-  <button type="button" class="green-button-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Meet up with <%= @user.username %>!
-  </button>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm your meet up with <%= @user.username %>:</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <%= simple_form_for [@localler, @meeting] do |f| %>
-              <%= f.input :time,
-              as: :string,
-              input_html: { data: { controller: "datepicker" } } %>
-              <%= f.hidden_field :chat_id, value: @chat.id %>
-              <%= f.input :location, label: "Location" %>
-              <%= f.button :submit, "Confirm", class: "black-button text-light" %>
-            <% end %>
-        </div>
-      </div>
-    </div>
   </div>
-  <% end %>
-  </div>
-
 </div>

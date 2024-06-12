@@ -1,7 +1,11 @@
-<div id="message-<%= message.id %>">
+
+<div class="message-send" id="message-<%= message.id %>">
   <small>
-    <strong><%= message.user.username %></strong>
-    <i><%= message.created_at.strftime("%a %b %e at %l:%M %p") %></i>
+    <% #previous_message = @chat.messages[-2]%>
+    <% #if previous_message.nil? || (message.created_at - previous_message.created_at) > 300 %>
+      <i id="info-messager"><%= message.created_at.strftime("%b %e at %l:%M %p") %></i>
+    <% #end %>
   </small>
-  <p><%= message.content %></p>
+  <p id="content-messager"><%= message.content %></p>
+  <% previous_message = message %>
 </div>

@@ -1,7 +1,6 @@
 .messages-index {
   background: #F0EBE5;
-  margin-top: 9px;
-  height: 100vh;
+  height: calc(100vh - 57px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,7 +16,7 @@
     font-family: "Inter", sans-serif;
     font-size: 30px;
     font-weight: 600;
-    padding-top: 60px;
+    padding-top: 40px;
     color: #26271F;
     }
 

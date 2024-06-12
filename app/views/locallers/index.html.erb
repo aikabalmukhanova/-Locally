@@ -42,7 +42,7 @@
                   <% localler.activities.each_with_index do |activity, i| %>
                     <% if (i + 1) == localler.activities.length %>
                       <p class="my-button"><%= activity.title %></p>
-
+                    <% else %>
                       <p class="my-button"><%= activity.title %> | </p>
                     <% end %>
                   <% end %>
