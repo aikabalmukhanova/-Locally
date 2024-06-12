@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import mapboxgl from 'mapbox-gl'
 
-// Connects to data-controller="map"
+// Connects to data-controller="map-show"
 export default class extends Controller {
   static values = {
     apiKey: String,
@@ -23,7 +23,7 @@ export default class extends Controller {
 
   #addMarkersToMap() {
     this.markersValue.forEach((marker) => {
-      const popup = new mapboxgl.Popup().setHTML(marker.info_window_html)
+      // const popup = new mapboxgl.Popup().setHTML(marker.info_window_html)
 
 
       // Create a HTML element for your custom marker
@@ -32,7 +32,7 @@ export default class extends Controller {
 
       new mapboxgl.Marker(customMarker)
       .setLngLat([ marker.lng, marker.lat ])
-      .setPopup(popup)
+      // .setPopup(popup)
       .addTo(this.map)
     })
   }
