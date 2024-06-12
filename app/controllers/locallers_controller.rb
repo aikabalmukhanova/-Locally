@@ -2,7 +2,7 @@ class LocallersController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-    @locallers = Localler.near(params[:query], 50)
+    @locallers = Localler.includes([:user, :activities]).near(params[:query], 50)
     @locallers = Localler.all if @locallers.empty?
     @activities = Activity.all
     if params[:filter].present?
