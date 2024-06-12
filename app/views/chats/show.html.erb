@@ -7,15 +7,15 @@
     <h2 class="h2-chat">Chat</h2>
 
 
-      <% if @localler == current_user.localler && current_user.localler.meetings.where(user: @user).any? %>
+      <% if @localler == current_user.localler && @localler_meetings.any?  %>
         <div class="meeting-notice">
-          <p>You're meeting <%= @user.username %> on <%= current_user.localler.meetings.where(user: @user).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= current_user.localler.meetings.where(user: @user).last.location %></p>
+          <p>You're meeting <%= @user.username %> on <%= @localler_meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @localler_meetings.last.location %></p>
         </div>
       <% end %>
 
-      <% if @localler != current_user.localler && @user.meetings.where(localler: @localler).any? %>
+      <% if @localler != current_user.localler && @user_meetings.any? %>
         <div class="meeting-notice">
-          <p>You're meeting <%= @localler.user.username %> on <%= @user.meetings.where(localler: @localler).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @user.meetings.where(localler: @localler).last.location %></p>
+          <p>You're meeting <%= @localler.user.username %> on <%= @user_meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @user_meetings.last.location %></p>
         </div>
       <% end %>
 
