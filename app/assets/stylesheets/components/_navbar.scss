@@ -73,6 +73,28 @@
   padding-left: 0;
 }
 
-.optional {
+.navabar {
+  .optional {
+    margin-bottom: 0 !important;
+  }
+
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+.navabar2 {
+  .optional {
+    margin-bottom: 0 !important;
+  }
+
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px!important;
+  }
+}
+
+.the-toggle .localler_availability {
   margin-bottom: 0 !important;
 }

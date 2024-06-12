@@ -27,7 +27,7 @@
           </ul>
         </div>
         <div class='let-chat'>
-         <% if @localler.user != current_user %>
+          <% if @localler.user != current_user %>
             <% if Chat.where(localler: @localler, user: current_user).any? %>
               <%= link_to "Let's chat!", chat_path(Chat.find_by(localler: @localler, user: current_user)), class: "green-button-chat" %>
             <% else %>
@@ -43,8 +43,7 @@
         data-map-show-markers-value="<%= @markers.to_json %>"
         data-map-show-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
-
+      <% # link_to "Back", :back, class: "text-light" %>
     </div>
-
   </div>
 </div>
