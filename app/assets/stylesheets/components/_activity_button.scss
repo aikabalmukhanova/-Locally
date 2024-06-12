@@ -22,6 +22,23 @@
 }
 
 
+.my-button-active {
+	background-color: #F0EBE5;
+  color: #26271F;
+	border-radius: 50px;
+	border: 1px solid #F0EBE5;
+	display: inline-block;
+  cursor: pointer;
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	padding: 8px 10px;
+	text-decoration: none;
+  margin: 0px;
+  margin-top: 0px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
 .my-button-dark {
 	background-color: transparent;
 	border-radius: 50px;
