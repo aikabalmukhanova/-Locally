@@ -155,18 +155,231 @@ avatar_bruna = URI.open("https://avatars.githubusercontent.com/u/162796074?v=4")
 avatar_aude = URI.open("https://avatars.githubusercontent.com/u/163596389?v=4")
 avatar_kenta = URI.open("https://avatars.githubusercontent.com/u/166846379?v=4")
 avatar_hugo = URI.open("https://avatars.githubusercontent.com/u/167010398?v=4")
-avatar_caroline = URI.open("https://avatars.githubusercontent.com/u/135339304?v=4")
+avatar_caroline = URI.open("https://images.unsplash.com/photo-1496360784265-52a2509684f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjY2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_emma_kim = URI.open("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_li_mei = URI.open("https://avatars.githubusercontent.com/u/135339304?v=4")
+avatar_hiroshi_sato = URI.open("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_maria_oliveira = URI.open("https://plus.unsplash.com/premium_photo-1686777551229-d8eca134c66e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_elena_smirnova = URI.open("https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_sophie_martin = URI.open("https://images.unsplash.com/photo-1526927071144-dbe4c41835e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjcwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_giulia_rossi = URI.open("https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_jack_wilson = URI.open("https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_lucy_williams = URI.open("https://images.unsplash.com/photo-1530785602389-07594beb8b73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_miguel_garcia = URI.open("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_anna_schneider = URI.open("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_david_smith = URI.open("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_isabelle_dubois = URI.open("https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_peter_johnson = URI.open("https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_ana_mendez = URI.open("https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_john_clark = URI.open("https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_hannah_murphy = URI.open("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_yuki_tanaka = URI.open("https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_michael_brown = URI.open("https://plus.unsplash.com/premium_photo-1669879825881-6d4e4bde67d5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_camila_silva = URI.open("https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_pierre_dupont = URI.open("https://images.unsplash.com/photo-1496360166961-10a51d5f367a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_sara_nilsson = URI.open("https://plus.unsplash.com/premium_photo-1664541336896-b3d5f7dec9a3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_raj_patel = URI.open("https://images.unsplash.com/photo-1619194617062-5a61b9c6a049?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_julia_kovacs = URI.open("https://images.unsplash.com/photo-1517462964-21fdcec3f25b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_diego_fernandez = URI.open("https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_nina_petrova = URI.open("https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_liam_chen = URI.open("https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_sophie_tremblay = URI.open("https://images.unsplash.com/photo-1519419691348-3b3433c4c20e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_omar_al_farsi = URI.open("https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_emily_clarke = URI.open("https://images.unsplash.com/photo-1496361001419-80f0d1be777a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_laura_martinez = URI.open("https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_robert_hall = URI.open("https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_anita_khan = URI.open("https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_kevin_lee = URI.open("https://images.unsplash.com/photo-1492447166138-50c3889fccb1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_elena_romanov = URI.open("https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_james_wright = URI.open("https://images.unsplash.com/photo-1521119989659-a83eee488004?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_amilia_rodriguez = URI.open("https://images.unsplash.com/photo-1534350131724-2a405f7108cb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_alexander_ivankov = URI.open("https://images.unsplash.com/photo-1484688493527-670f98f9b195?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_sara_almeida = URI.open("https://images.unsplash.com/photo-1502767882403-636aee14f873?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_michael_schmidt = URI.open("https://images.unsplash.com/photo-1518799175676-a0fed7996acb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_sophia_leblanc = URI.open("https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_muhammad_ali = URI.open("https://images.unsplash.com/photo-1621352152645-61f4835b081b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_anna_kuznetsova = URI.open("https://images.unsplash.com/photo-1522262590532-a991489a0253?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_olivia_andersson = URI.open("https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_lucas_rodriguez = URI.open("https://images.unsplash.com/photo-1488161628813-04466f872be2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_anna_korhonen = URI.open("https://images.unsplash.com/photo-1617315072157-5f1d3f55ddd3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_juan_gomez = URI.open("https://images.unsplash.com/photo-1621353269062-6aa0165576f2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_lucia_fernandez = URI.open("https://images.unsplash.com/photo-1465429167186-266ef03d6277?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_viktor_petrov = URI.open("https://images.unsplash.com/photo-1492446845049-9c50cc313f00?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_lucia_santos = URI.open("https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_alexander_mueller = URI.open("https://images.unsplash.com/photo-1567186937675-a5131c8a89ea?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_maria_gonzalez = URI.open("https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_sophie_lefebvre = URI.open("https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_mohammed_ali = URI.open("https://images.unsplash.com/photo-1622031093531-f4e641788763?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_lara_silva = URI.open("https://images.unsplash.com/photo-1496360650824-229a83e340db?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_mikhail_ivanov = URI.open("https://images.unsplash.com/photo-1489980869433-d1f7c7ac0fcf?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_anna_petrova = URI.open("https://images.unsplash.com/photo-1485178575877-1a13bf489dfe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_diego_santos = URI.open("https://images.unsplash.com/photo-1474176857210-7287d38d27c6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_yusuf_ali = URI.open("https://images.unsplash.com/photo-1492462543947-040389c4a66c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_elena_kuznetsova = URI.open("https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_sofia_garcia = URI.open("https://images.unsplash.com/photo-1486413869840-a99ac0a4c031?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_daniel_andersen = URI.open("https://images.unsplash.com/photo-1440133197387-5a6020d5ace2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODF8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_yulia_petrova = URI.open("https://images.unsplash.com/photo-1509868918748-a554ad25f858?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_luca_rossi = URI.open("https://images.unsplash.com/photo-1473172707857-f9e276582ab6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_isabella_conti = URI.open("https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_marta_franco = URI.open("https://images.unsplash.com/photo-1504834636679-cd3acd047c06?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_mark_johnson = URI.open("https://images.unsplash.com/photo-1492567291473-fe3dfc175b45?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_luciana_silva = URI.open("https://images.unsplash.com/photo-1496203695688-3b8985780d6a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_anna_kovacs = URI.open("https://images.unsplash.com/photo-1469460340997-2f854421e72f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_gabriel_silva = URI.open("https://images.unsplash.com/photo-1508341591423-4347099e1f19?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_emilia_rodriguez = URI.open("https://images.unsplash.com/photo-1458681708599-e0be9ce54707?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_pablo_lopez = URI.open("https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE1fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_elena_peterson = URI.open("https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_giovanni_ricci = URI.open("https://images.unsplash.com/photo-1496346236646-50e985b31ea4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_maria_rodriguez = URI.open("https://images.unsplash.com/photo-1498551172505-8ee7ad69f235?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_julia_schmidt = URI.open("https://images.unsplash.com/photo-1440589473619-3cde28941638?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_david_martinez = URI.open("https://images.unsplash.com/photo-1492447216082-4726bf04d1d1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_joseph_wong = URI.open("https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMzfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_anastasia_kuznetsova = URI.open("https://images.unsplash.com/photo-1502323777036-f29e3972d82f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_nicolas_leroy = URI.open("https://images.unsplash.com/photo-1482235225574-c37692835cf3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ1fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_olga_ivanova = URI.open("https://images.unsplash.com/photo-1450297350677-623de575f31c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMxfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3Dhttps://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_fabio_conti = URI.open("https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_carla_garcia = URI.open("https://images.unsplash.com/photo-1542596594-649edbc13630?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3Dhttps://images.unsplash.com/photo-1473531761844-5a14668fc8f8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUzfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3Dhttps://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM5fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_daniel_nguyen = URI.open("https://images.unsplash.com/photo-1473531761844-5a14668fc8f8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUzfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3Dhttps://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM5fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_lucia_martinez = URI.open("https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM5fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_jakub_nowak = URI.open("https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_anna_smith = URI.open("https://images.unsplash.com/photo-1439402702863-6434b61e6392?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_marco_rodriguez = URI.open("https://images.unsplash.com/photo-1506634572416-48cdfe530110?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYzfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_sophie_dubois = URI.open("https://images.unsplash.com/photo-1462804993656-fac4ff489837?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY1fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_maximilian_mueller = URI.open("https://images.unsplash.com/photo-1496088941920-f7d451d95bf4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_olivia_anderson = URI.open("https://images.unsplash.com/photo-1517677129300-07b130802f46?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+avatar_felipe_gomez = URI.open("https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_sara_müller = URI.open("https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_leo_rodriguez = URI.open("https://images.unsplash.com/photo-1484517186945-df8151a1a871?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_emily_wang = URI.open("https://images.unsplash.com/photo-1482849297070-f4fae2173efe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_mikhail_smirnov = URI.open("https://images.unsplash.com/photo-1485528562718-2ae1c8419ae2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_anna_schnëider = URI.open("https://images.unsplash.com/photo-1509783236416-c9ad59bae472?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcxfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_maria_rodrigueze = URI.open("https://images.unsplash.com/photo-1492814580460-1f9a2a463cfe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_thomas_müller = URI.open("https://images.unsplash.com/photo-1485893226355-9a1c32a0c81e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_sofia_fernandez = URI.open("https://images.unsplash.com/photo-1487573884658-a5d3c667584e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_andreas_schmidt = URI.open("https://images.unsplash.com/photo-1476903930099-d0ddfec9a475?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_laura_rodriguez = URI.open("https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjUyfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_alexander_schneider = URI.open("https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE3fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_juliana_silva = URI.open("https://images.unsplash.com/photo-1480914362564-9f2c2634e266?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_matteo_bianchi = URI.open("https://images.unsplash.com/photo-1521151716396-b2da27b1a19f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_elena_popova = URI.open("https://images.unsplash.com/photo-1445384763658-0400939829cd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
 
-guillaume.profile_picture.attach(io: avatar_guillaume, filename: "guy", content_type: "image/png")
-luk.profile_picture.attach(io: avatar_luk, filename: "luk", content_type: "image/jpg")
-mathieu.profile_picture.attach(io: avatar_mathieu, filename: "mathieu", content_type: "image/png")
-aika.profile_picture.attach(io: avatar_aika, filename: "aika", content_type: "image/png")
-pedro.profile_picture.attach(io: avatar_pedro, filename: "pedro", content_type: "image/png")
-bruna.profile_picture.attach(io: avatar_bruna, filename: "bruna", content_type: "image/png")
-aude.profile_picture.attach(io: avatar_aude, filename: "aude", content_type: "image/png")
-kenta.profile_picture.attach(io: avatar_kenta, filename: "kenta", content_type: "image/png")
-hugo.profile_picture.attach(io: avatar_hugo, filename: "hugo", content_type: "image/png")
-caroline.profile_picture.attach(io: avatar_caroline, filename: "caroline", content_type: "image/png")
+
+guillaume.profile_picture.attach(io: avatar_guillaume, filename: "guy.png", content_type: "image/png")
+luk.profile_picture.attach(io: avatar_luk, filename: "luk.jpg", content_type: "image/jpg")
+mathieu.profile_picture.attach(io: avatar_mathieu, filename: "mathieu.jpg", content_type: "image/jpg")
+aika.profile_picture.attach(io: avatar_aika, filename: "aika.png", content_type: "image/png")
+pedro.profile_picture.attach(io: avatar_pedro, filename: "pedro.png", content_type: "image/png")
+bruna.profile_picture.attach(io: avatar_bruna, filename: "bruna.png", content_type: "image/png")
+aude.profile_picture.attach(io: avatar_aude, filename: "aude.png", content_type: "image/png")
+kenta.profile_picture.attach(io: avatar_kenta, filename: "kenta.png", content_type: "image/png")
+hugo.profile_picture.attach(io: avatar_hugo, filename: "hugo.png", content_type: "image/png")
+caroline.profile_picture.attach(io: avatar_caroline, filename: "caroline.png", content_type: "image/png")
+emma_kim.profile_picture.attach(io: avatar_emma_kim, filename: "emma_kim.png", content_type: "image/png")
+li_mei.profile_picture.attach(io: avatar_li_mei, filename: "li_mei.png", content_type: "image/png")
+hiroshi_sato.profile_picture.attach(io: avatar_hiroshi_sato, filename: "hiroshi_sato.png", content_type: "image/png")
+maria_oliveira.profile_picture.attach(io: avatar_maria_oliveira, filename: "maria_oliveira.png", content_type: "image/png")
+elena_smirnova.profile_picture.attach(io: avatar_elena_smirnova, filename: "elena_smirnova.png", content_type: "image/png")
+sophie_martin.profile_picture.attach(io: avatar_sophie_martin, filename: "sophie_martin.png", content_type: "image/png")
+giulia_rossi.profile_picture.attach(io: avatar_giulia_rossi, filename: "giulia_rossi.png", content_type: "image/png")
+jack_wilson.profile_picture.attach(io: avatar_jack_wilson, filename: "jack_wilson.png", content_type: "image/png")
+lucy_williams.profile_picture.attach(io: avatar_lucy_williams, filename: "lucy_williams.png", content_type: "image/png")
+miguel_garcia.profile_picture.attach(io: avatar_miguel_garcia, filename: "miguel_garcia.png", content_type: "image/png")
+anna_schneider.profile_picture.attach(io: avatar_anna_schneider, filename: "anna_schneider.png", content_type: "image/png")
+david_smith.profile_picture.attach(io: avatar_david_smith, filename: "david_smith.png", content_type: "image/png")
+isabelle_dubois.profile_picture.attach(io: avatar_isabelle_dubois, filename: "isabelle_dubois.png", content_type: "image/png")
+peter_johnson.profile_picture.attach(io: avatar_peter_johnson, filename: "peter_johnson.png", content_type: "image/png")
+ana_mendez.profile_picture.attach(io: avatar_ana_mendez, filename: "ana_mendez.png", content_type: "image/png")
+john_clark.profile_picture.attach(io: avatar_john_clark, filename: "john_clark.png", content_type: "image/png")
+hannah_murphy.profile_picture.attach(io: avatar_hannah_murphy, filename: "hannah_murphy.png", content_type: "image/png")
+yuki_tanaka.profile_picture.attach(io: avatar_yuki_tanaka, filename: "yuki_tanaka.png", content_type: "image/png")
+michael_brown.profile_picture.attach(io: avatar_michael_brown, filename: "michael_brown.png", content_type: "image/png")
+camila_silva.profile_picture.attach(io: avatar_camila_silva, filename: "camila_silva.png", content_type: "image/png")
+pierre_dupont.profile_picture.attach(io: avatar_pierre_dupont, filename: "pierre_dupont.png", content_type: "image/png")
+sara_nilsson.profile_picture.attach(io: avatar_sara_nilsson, filename: "sara_nilsson.png", content_type: "image/png")
+raj_patel.profile_picture.attach(io: avatar_raj_patel, filename: "raj_patel.png", content_type: "image/png")
+julia_kovacs.profile_picture.attach(io: avatar_julia_kovacs, filename: "julia_kovacs.png", content_type: "image/png")
+diego_fernandez.profile_picture.attach(io: avatar_diego_fernandez, filename: "diego_fernandez.png", content_type: "image/png")
+nina_petrova.profile_picture.attach(io: avatar_nina_petrova, filename: "nina_petrova.png", content_type: "image/png")
+liam_chen.profile_picture.attach(io: avatar_liam_chen, filename: "liam_chen.png", content_type: "image/png")
+sophie_tremblay.profile_picture.attach(io: avatar_sophie_tremblay, filename: "sophie_tremblay.png", content_type: "image/png")
+omar_al_farsi.profile_picture.attach(io: avatar_omar_al_farsi, filename: "omar_al_farsi.png", content_type: "image/png")
+emily_clarke.profile_picture.attach(io: avatar_emily_clarke, filename: "emily_clarke.png", content_type: "image/png")
+laura_martinez.profile_picture.attach(io: avatar_laura_martinez, filename: "laura_martinez.png", content_type: "image/png")
+robert_hall.profile_picture.attach(io: avatar_robert_hall, filename: "robert_hall.png", content_type: "image/png")
+anita_khan.profile_picture.attach(io: avatar_anita_khan, filename: "anita_khan.png", content_type: "image/png")
+kevin_lee.profile_picture.attach(io: avatar_kevin_lee, filename: "kevin_lee.png", content_type: "image/png")
+elena_romanov.profile_picture.attach(io: avatar_elena_romanov, filename: "elena_romanov.png", content_type: "image/png")
+james_wright.profile_picture.attach(io: avatar_james_wright, filename: "james_wright.png", content_type: "image/png")
+amilia_rodriguez.profile_picture.attach(io: avatar_amilia_rodriguez, filename: "amilia_rodriguez.png", content_type: "image/png")
+alexander_ivankov.profile_picture.attach(io: avatar_alexander_ivankov, filename: "alexander_ivankov.png", content_type: "image/png")
+sara_almeida.profile_picture.attach(io: avatar_sara_almeida, filename: "sara_almeida.png", content_type: "image/png")
+michael_schmidt.profile_picture.attach(io: avatar_michael_schmidt, filename: "michael_schmidt.png", content_type: "image/png")
+sophia_leblanc.profile_picture.attach(io: avatar_sophia_leblanc, filename: "sophia_leblanc.png", content_type: "image/png")
+muhammad_ali.profile_picture.attach(io: avatar_muhammad_ali, filename: "muhammad_ali.png", content_type: "image/png")
+anna_kuznetsova.profile_picture.attach(io: avatar_anna_kuznetsova, filename: "anna_kuznetsova.png", content_type: "image/png")
+olivia_andersson.profile_picture.attach(io: avatar_olivia_andersson, filename: "olivia_andersson.png", content_type: "image/png")
+lucas_rodriguez.profile_picture.attach(io: avatar_lucas_rodriguez, filename: "lucas_rodriguez.png", content_type: "image/png")
+anna_korhonen.profile_picture.attach(io: avatar_anna_korhonen, filename: "anna_korhonen.png", content_type: "image/png")
+juan_gomez.profile_picture.attach(io: avatar_juan_gomez, filename: "juan_gomez.png", content_type: "image/png")
+lucia_fernandez.profile_picture.attach(io: avatar_lucia_fernandez, filename: "lucia_fernandez.png", content_type: "image/png")
+viktor_petrov.profile_picture.attach(io: avatar_viktor_petrov, filename: "viktor_petrov.png", content_type: "image/png")
+lucia_santos.profile_picture.attach(io: avatar_lucia_santos, filename: "lucia_santos.png", content_type: "image/png")
+alexander_mueller.profile_picture.attach(io: avatar_alexander_mueller, filename: "alexander_mueller.png", content_type: "image/png")
+maria_gonzalez.profile_picture.attach(io: avatar_maria_gonzalez, filename: "maria_gonzalez.png", content_type: "image/png")
+sophie_lefebvre.profile_picture.attach(io: avatar_sophie_lefebvre, filename: "sophie_lefebvre.png", content_type: "image/png")
+mohammed_ali.profile_picture.attach(io: avatar_mohammed_ali, filename: "mohammed_ali.png", content_type: "image/png")
+lara_silva.profile_picture.attach(io: avatar_lara_silva, filename: "lara_silva.png", content_type: "image/png")
+mikhail_ivanov.profile_picture.attach(io: avatar_mikhail_ivanov, filename: "mikhail_ivanov.png", content_type: "image/png")
+anna_petrova.profile_picture.attach(io: avatar_anna_petrova, filename: "anna_petrova.png", content_type: "image/png")
+diego_santos.profile_picture.attach(io: avatar_diego_santos, filename: "diego_santos.png", content_type: "image/png")
+yusuf_ali.profile_picture.attach(io: avatar_yusuf_ali, filename: "yusuf_ali.png", content_type: "image/png")
+elena_kuznetsova.profile_picture.attach(io: avatar_elena_kuznetsova, filename: "elena_kuznetsova.png", content_type: "image/png")
+sofia_garcia.profile_picture.attach(io: avatar_sofia_garcia, filename: "sofia_garcia.png", content_type: "image/png")
+daniel_andersen.profile_picture.attach(io: avatar_daniel_andersen, filename: "daniel_andersen.png", content_type: "image/png")
+yulia_petrova.profile_picture.attach(io: avatar_yulia_petrova, filename: "yulia_petrova.png", content_type: "image/png")
+luca_rossi.profile_picture.attach(io: avatar_luca_rossi, filename: "luca_rossi.png", content_type: "image/png")
+isabella_conti.profile_picture.attach(io: avatar_isabella_conti, filename: "isabella_conti.png", content_type: "image/png")
+marta_franco.profile_picture.attach(io: avatar_marta_franco, filename: "marta_franco.png", content_type: "image/png")
+mark_johnson.profile_picture.attach(io: avatar_mark_johnson, filename: "mark_johnson.png", content_type: "image/png")
+luciana_silva.profile_picture.attach(io: avatar_luciana_silva, filename: "luciana_silva.png", content_type: "image/png")
+anna_kovacs.profile_picture.attach(io: avatar_anna_kovacs, filename: "anna_kovacs.png", content_type: "image/png")
+gabriel_silva.profile_picture.attach(io: avatar_gabriel_silva, filename: "gabriel_silva.png", content_type: "image/png")
+emilia_rodriguez.profile_picture.attach(io: avatar_emilia_rodriguez, filename: "emilia_rodriguez.png", content_type: "image/png")
+pablo_lopez.profile_picture.attach(io: avatar_pablo_lopez, filename: "pablo_lopez.png", content_type: "image/png")
+elena_peterson.profile_picture.attach(io: avatar_elena_peterson, filename: "elena_peterson.png", content_type: "image/png")
+giovanni_ricci.profile_picture.attach(io: avatar_giovanni_ricci, filename: "giovanni_ricci.png", content_type: "image/png")
+maria_rodriguez.profile_picture.attach(io: avatar_maria_rodriguez, filename: "maria_rodriguez.png", content_type: "image/png")
+julia_schmidt.profile_picture.attach(io: avatar_julia_schmidt, filename: "julia_schmidt.png", content_type: "image/png")
+david_martinez.profile_picture.attach(io: avatar_david_martinez, filename: "david_martinez.png", content_type: "image/png")
+joseph_wong.profile_picture.attach(io: avatar_joseph_wong, filename: "joseph_wong.png", content_type: "image/png")
+anastasia_kuznetsova.profile_picture.attach(io: avatar_anastasia_kuznetsova, filename: "anastasia_kuznetsova.png", content_type: "image/png")
+nicolas_leroy.profile_picture.attach(io: avatar_nicolas_leroy, filename: "nicolas_leroy.png", content_type: "image/png")
+olga_ivanova.profile_picture.attach(io: avatar_olga_ivanova, filename: "olga_ivanova.png", content_type: "image/png")
+fabio_conti.profile_picture.attach(io: avatar_fabio_conti, filename: "fabio_conti.png", content_type: "image/png")
+carla_garcia.profile_picture.attach(io: avatar_carla_garcia, filename: "carla_garcia.png", content_type: "image/png")
+daniel_nguyen.profile_picture.attach(io: avatar_daniel_nguyen, filename: "daniel_nguyen.png", content_type: "image/png")
+lucia_martinez.profile_picture.attach(io: avatar_lucia_martinez, filename: "caroline.png", content_type: "image/png")
+jakub_nowak.profile_picture.attach(io: avatar_jakub_nowak, filename: "lucia_martinez.png", content_type: "image/png")
+anna_smith.profile_picture.attach(io: avatar_anna_smith, filename: "anna_smith.png", content_type: "image/png")
+marco_rodriguez.profile_picture.attach(io: avatar_marco_rodriguez, filename: "marco_rodriguez.png", content_type: "image/png")
+sophie_dubois.profile_picture.attach(io: avatar_sophie_dubois, filename: "sophie_dubois.png", content_type: "image/png")
+maximilian_mueller.profile_picture.attach(io: avatar_maximilian_mueller, filename: "maximilian_mueller.png", content_type: "image/png")
+olivia_anderson.profile_picture.attach(io: avatar_olivia_anderson, filename: "olivia_anderson.png", content_type: "image/png")
+felipe_gomez.profile_picture.attach(io: avatar_felipe_gomez, filename: "felipe_gomez.png", content_type: "image/png")
+sara_müller.profile_picture.attach(io: avatar_sara_müller, filename: "sara_müller.png", content_type: "image/png")
+leo_rodriguez.profile_picture.attach(io: avatar_leo_rodriguez, filename: "leo_rodriguez.png", content_type: "image/png")
+emily_wang.profile_picture.attach(io: avatar_emily_wang, filename: "emily_wang.png", content_type: "image/png")
+mikhail_smirnov.profile_picture.attach(io: avatar_mikhail_smirnov, filename: "mikhail_smirnov.png", content_type: "image/png")
+anna_schnëider.profile_picture.attach(io: avatar_anna_schnëider, filename: "anna_schnëider.png", content_type: "image/png")
+maria_rodrigueze.profile_picture.attach(io: avatar_maria_rodrigueze, filename: "maria_rodrigueze.png", content_type: "image/png")
+thomas_müller.profile_picture.attach(io: avatar_thomas_müller, filename: "thomas_müller.png", content_type: "image/png")
+sofia_fernandez.profile_picture.attach(io: avatar_sofia_fernandez, filename: "sofia_fernandez.png", content_type: "image/png")
+andreas_schmidt.profile_picture.attach(io: avatar_andreas_schmidt, filename: "andreas_schmidt.png", content_type: "image/png")
+laura_rodriguez.profile_picture.attach(io: avatar_laura_rodriguez, filename: "laura_rodriguez.png", content_type: "image/png")
+alexander_schneider.profile_picture.attach(io: avatar_alexander_schneider, filename: "alexander_schneider.png", content_type: "image/png")
+juliana_silva.profile_picture.attach(io: avatar_juliana_silva, filename: "juliana_silva.png", content_type: "image/png")
+matteo_bianchi.profile_picture.attach(io: avatar_matteo_bianchi, filename: "matteo_bianchi.png", content_type: "image/png")
+elena_popova.profile_picture.attach(io: avatar_elena_popova, filename: "elena_popova.png", content_type: "image/png")
 
 guillaume.save
 luk.save
@@ -178,6 +391,112 @@ aude.save
 kenta.save
 hugo.save
 caroline.save
+emma_kim.save
+li_mei.save
+hiroshi_sato.save
+maria_oliveira.save
+elena_smirnova.save
+sophie_martin.save
+giulia_rossi.save
+jack_wilson.save
+lucy_williams.save
+miguel_garcia.save
+anna_schneider.save
+david_smith.save
+isabelle_dubois.save
+peter_johnson.save
+ana_mendez.save
+john_clark.save
+hannah_murphy.save
+yuki_tanaka.save
+michael_brown.save
+camila_silva.save
+pierre_dupont.save
+sara_nilsson.save
+raj_patel.save
+julia_kovacs.save
+diego_fernandez.save
+nina_petrova.save
+liam_chen.save
+sophie_tremblay.save
+omar_al_farsi.save
+emily_clarke.save
+laura_martinez.save
+robert_hall.save
+anita_khan.save
+kevin_lee.save
+elena_romanov.save
+james_wright.save
+amilia_rodriguez.save
+alexander_ivankov.save
+sara_almeida.save
+michael_schmidt.save
+sophia_leblanc.save
+muhammad_ali.save
+anna_kuznetsova.save
+olivia_andersson.save
+lucas_rodriguez.save
+anna_korhonen.save
+juan_gomez.save
+lucia_fernandez.save
+viktor_petrov.save
+lucia_santos.save
+alexander_mueller.save
+maria_gonzalez.save
+sophie_lefebvre.save
+mohammed_ali.save
+lara_silva.save
+mikhail_ivanov.save
+anna_petrova.save
+diego_santos.save
+yusuf_ali.save
+elena_kuznetsova.save
+sofia_garcia.save
+daniel_andersen.save
+yulia_petrova.save
+luca_rossi.save
+isabella_conti.save
+marta_franco.save
+mark_johnson.save
+luciana_silva.save
+anna_kovacs.save
+gabriel_silva.save
+emilia_rodriguez.save
+pablo_lopez.save
+elena_peterson.save
+giovanni_ricci.save
+maria_rodriguez.save
+julia_schmidt.save
+david_martinez.save
+joseph_wong.save
+anastasia_kuznetsova.save
+nicolas_leroy.save
+olga_ivanova.save
+fabio_conti.save
+carla_garcia.save
+daniel_nguyen.save
+lucia_martinez.save
+jakub_nowak.save
+anna_smith.save
+marco_rodriguez.save
+sophie_dubois.save
+maximilian_mueller.save
+olivia_anderson.save
+felipe_gomez.save
+sara_müller.save
+leo_rodriguez.save
+emily_wang.save
+mikhail_smirnov.save
+anna_schnëider.save
+maria_rodrigueze.save
+thomas_müller.save
+sofia_fernandez.save
+andreas_schmidt.save
+laura_rodriguez.save
+alexander_schneider.save
+juliana_silva.save
+matteo_bianchi.save
+elena_popova.save
 
 puts "Creating locallers..."
 
