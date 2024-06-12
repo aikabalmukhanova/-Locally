@@ -22,16 +22,16 @@ history = Activity.create!(title: 'History & Heritage')
 
 puts "Creating users..."
 
-guillaume = User.create!(email: 'guillaume@locally.com', password: '123456', username: 'Guillaume', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-luk = User.create!(email: 'luk@locally.com', password: '123456', username: 'Luk', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-mathieu = User.create!(email: 'mathieu@locally.com', password: '123456', username: 'Mathieu', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-aika = User.create!(email: 'aika@locally.com', password: '123456', username: 'Aika', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-pedro = User.create!(email: 'pedro@locally.com', password: '123456', username: 'Pedro', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-bruna = User.create!(email: 'bruna@locally.com', password: '123456', username: 'Bruna', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-aude = User.create!(email: 'aude@locally.com', password: '123456', username: 'Aude', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-kenta = User.create!(email: 'kenta@locally.com', password: '123456', username: 'Kenta', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-hugo = User.create!(email: 'hugo@locally.com', password: '123456', username: 'Hugo', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
-caroline = User.create!(email: 'caroline@locally.com', password: '123456', username: 'Caroline', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+guillaume = User.create!(email: 'guillaume@locally.com', password: '123456', username: 'Guillaume Verlooy', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+luk = User.create!(email: 'luk@locally.com', password: '123456', username: 'Luk Triquet', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+mathieu = User.create!(email: 'mathieu@locally.com', password: '123456', username: 'Mathieu Heynen', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+aika = User.create!(email: 'aika@locally.com', password: '123456', username: 'Aika Balmukhanova', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+pedro = User.create!(email: 'pedro@locally.com', password: '123456', username: 'Pedro Vilarinho', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+bruna = User.create!(email: 'bruna@locally.com', password: '123456', username: 'Bruna Caricio', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+aude = User.create!(email: 'aude@locally.com', password: '123456', username: 'Aude Cordemans', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+kenta = User.create!(email: 'kenta@locally.com', password: '123456', username: 'Kenta Merry', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+hugo = User.create!(email: 'hugo@locally.com', password: '123456', username: 'Hugo Nieuwenhuyse', bio: 'I am a software engineer and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
+caroline = User.create!(email: 'caroline@locally.com', password: '123456', username: 'Caroline Deuse', bio: 'I am a student and I love to travel. I am always looking for new experiences and I am happy to share my knowledge with you.')
 emma_kim = User.create!(email: 'emma.kim@locally.com', password: '123456', username: 'Emma Kim', bio: "I am a food lover from Seoul, passionate about exploring the city's culinary delights and vibrant nightlife.")
 li_mei = User.create!(email: 'li.mei@locally.com', password: '123456', username: 'Li Mei', bio: "A local history buff from Beijing, passionate about sharing the city's ancient stories and unique art.")
 hiroshi_sato = User.create!(email: 'hiroshi.sato@locally.com', password: '123456', username: 'Hiroshi Sato', bio: "Art enthusiast from Tokyo who enjoys exploring unique art scenes and vibrant shopping districts.")
@@ -243,7 +243,7 @@ avatar_lucia_martinez = URI.open("https://images.unsplash.com/photo-150091729389
 avatar_jakub_nowak = URI.open("https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
 avatar_anna_smith = URI.open("https://images.unsplash.com/photo-1439402702863-6434b61e6392?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ0fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
 avatar_marco_rodriguez = URI.open("https://images.unsplash.com/photo-1506634572416-48cdfe530110?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYzfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
-avatar_sophie_dubois = URI.open("https://images.unsplash.com/photo-1462804993656-fac4ff489837?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY1fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_sophie_dubois = URI.open("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
 avatar_maximilian_mueller = URI.open("https://images.unsplash.com/photo-1496088941920-f7d451d95bf4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
 avatar_olivia_anderson = URI.open("https://images.unsplash.com/photo-1517677129300-07b130802f46?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
 avatar_felipe_gomez = URI.open("https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
@@ -261,7 +261,10 @@ avatar_alexander_schneider = URI.open("https://images.unsplash.com/photo-1568602
 avatar_juliana_silva = URI.open("https://images.unsplash.com/photo-1480914362564-9f2c2634e266?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
 avatar_matteo_bianchi = URI.open("https://images.unsplash.com/photo-1521151716396-b2da27b1a19f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
 avatar_elena_popova = URI.open("https://images.unsplash.com/photo-1445384763658-0400939829cd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
-
+avatar_lucas_martinez = URI.open("https://images.unsplash.com/photo-1521151716396-b2da27b1a19f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAwfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_ana_martinez = URI.open("https://images.unsplash.com/photo-1445384763658-0400939829cd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
+avatar_antonio_moreno = URI.open("https://images.unsplash.com/photo-1518799175676-a0fed7996acb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
+avatar_giorgio_rossi = URI.open("https://images.unsplash.com/photo-1518799175676-a0fed7996acb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
 
 guillaume.profile_picture.attach(io: avatar_guillaume, filename: "guy.png", content_type: "image/png")
 luk.profile_picture.attach(io: avatar_luk, filename: "luk.jpg", content_type: "image/jpg")
@@ -379,6 +382,11 @@ alexander_schneider.profile_picture.attach(io: avatar_alexander_schneider, filen
 juliana_silva.profile_picture.attach(io: avatar_juliana_silva, filename: "juliana_silva.png", content_type: "image/png")
 matteo_bianchi.profile_picture.attach(io: avatar_matteo_bianchi, filename: "matteo_bianchi.png", content_type: "image/png")
 elena_popova.profile_picture.attach(io: avatar_elena_popova, filename: "elena_popova.png", content_type: "image/png")
+lucas_martinez.profile_picture.attach(io: avatar_lucas_martinez, filename: "lucas_martinez.png", content_type: "image/png")
+ana_martinez.profile_picture.attach(io: avatar_ana_martinez, filename: "ana_martinez.png", content_type: "image/png")
+antonio_moreno.profile_picture.attach(io: avatar_antonio_moreno, filename: "antonio_moren.png", content_type: "image/png")
+giorgio_rossi.profile_picture.attach(io: avatar_giorgio_rossi, filename: "giorgio_rossi.png", content_type: "image/png")
+
 
 guillaume.save
 luk.save
@@ -496,6 +504,10 @@ alexander_schneider.save
 juliana_silva.save
 matteo_bianchi.save
 elena_popova.save
+lucas_martinez.save
+ana_martinez.save
+antonio_moreno.save
+giorgio_rossi.save
 
 puts "Creating locallers..."
 

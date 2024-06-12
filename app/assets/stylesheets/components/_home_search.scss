@@ -20,6 +20,7 @@
 .mapboxgl-ctrl-geocoder--input {
   padding: 0px 30px;
   height: 30px;
+  color: #F0EBE5;
 }
 
 .mapboxgl-ctrl-geocoder .mapboxgl-ctrl {
@@ -39,4 +40,14 @@
 
 .mapboxgl-ctrl-geocoder--icon {
   fill: #F0EBE5;
+}
+
+.mapboxgl-ctrl-geocoder--input::placeholder {
+  color: #F0EBE5;
+}
+
+.mapboxgl-ctrl-geocoder--input:focus {
+  color: #F0EBE5;
+  border: none;
+  outline: none;
 }
