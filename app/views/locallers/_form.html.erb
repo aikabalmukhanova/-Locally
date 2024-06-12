@@ -1,7 +1,7 @@
 <div class="bg-index">
   <div class="pages">
     <%= simple_form_for [@localler] do |f| %>
-      <div class="form-inputs">
+      <div class="form-inputs localler-creating">
         <%= f.input :description %>
         <%= f.input :location %>
         <%= f.association :activities, as: :check_boxes %>

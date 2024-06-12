@@ -29,12 +29,13 @@
                       required: true %>
         </div>
 
-        <div class="form-actions">
-          <%= f.button :submit, "Sign up" %>
+        <div class="form-actions signup-creating">
+          <%= f.button :submit, "Sign up", class: "green-button-login" %>
         </div>
       <% end %>
-
+      <div class="d-flex flex-column align-items-center form-actions-secondary">
       <%= render "devise/shared/links" %>
+      </div>
     </div>
   </div>
 </div>
