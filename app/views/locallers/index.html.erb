@@ -6,7 +6,9 @@
       <div class="carousel">
         <div class="card-carousel-container">
           <% @activities.each do |activity| %>
-            <div class="card-carousel"><%= link_to activity.title, locallers_path(filter: activity.title, query: params[:query]), class: "my-button" %></div>
+            <div class="card-carousel"><%= link_to activity.title, locallers_path(filter: activity.title, query: params[:query]),
+            class: "#{params[:filter] == activity.title ? "my-button-active" : "my-button"}" %>
+            </div>
           <% end %>
         </div>
       </div>
