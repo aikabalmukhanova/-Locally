@@ -3,23 +3,31 @@
     <div class="messages-index">
       <div class="container">
 
-      <h2><i class="fa-solid fa-envelope"></i> My Messages</h2>
+<h2><i class="fa-solid fa-envelope"></i> My Chats</h2>
         <% if @chats.any? %>
           <% @chats.each do |chat| %>
             <div class="card card-chats">
               <div class="card-body">
                 <div class="card-title">
                   <% if current_user != chat.localler.user %>
-                    <h4 class="fw-bold"><%= chat.localler.user.username %></h4>
-                    <p><%= chat.messages.last.present? ? truncate(chat.messages.last.content, length: 80) : "No messages yet" %></p>
+                    <h4 class="fw-bold ps-1 pb-1"><%= chat.localler.user.username %></h4>
                   <% else %>
-                    <h4 class="fw-bold"><%= chat.user.username %></h4>
-                    <p><%= chat.messages.last.present? ? truncate(chat.messages.last.content, length: 80) : "No messages yet" %></p>
+                    <h4 class="fw-bold ps-1 pb-1"><%= chat.user.username %></h4>
                   <% end %>
                 </div>
 
+          <% if chat.meetings.any? %>
+            <div class="meeting-notice">
+              <% if current_user == chat.user %>
+                <p>You're meeting with <%= chat.localler.user.username %> on <%= chat.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= chat.meetings.last.location %></p>
+              <% else %>
+                <p>You're meeting with <%= chat.user.username %> on <%= chat.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= chat.meetings.last.location %></p>
+              <% end %>
+            </div>
+          <% end %>
+
                 <div class="text-center">
-                  <%= link_to "Open chat", chat_path(chat), class:"green-button-chat w-100" %>
+                  <%= link_to "Open chat", chat_path(chat), class:"green-button-chat w-100 mb-2" %>
                   <% if current_user == chat.user %>
                     <%= link_to "See Profile", localler_path(chat.localler), class:"black-button-chat w-100" %>
                   <% else %>
