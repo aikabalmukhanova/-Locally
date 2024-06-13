@@ -1,6 +1,6 @@
 class ChatsController < ApplicationController
   def index
-    @chats = current_user.chats + current_user.localler.chats
+    @chats = current_user.chats.includes(:localler) + current_user.localler.chats.includes(:localler)
   end
 
   def show
@@ -8,6 +8,9 @@ class ChatsController < ApplicationController
     @localler = @chat.localler
     @user = @chat.user
     @meeting = Meeting.new
+    @localler_meetings = @chat.meetings.where localler: @localler
+    @user_meetings = @chat.meetings.where user: @user
+
     if @chat.user != current_user && @chat.localler.user != current_user
       redirect_to locallers_path, notice: "You don't have access to this chat"
     end

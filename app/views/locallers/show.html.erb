@@ -33,6 +33,7 @@
             <% else %>
               <%= link_to "Let's chat!", chats_path(localler: @localler), data: {turbo_method: :post}, class: "green-button-chat" %>
             <% end %>
+            <% link_to "Back", :back, class: "green-outline-button-chat" %>
           <% end %>
         </div>
       </div>

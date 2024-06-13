@@ -13,11 +13,17 @@
           </div>
         <% end %>
 
-        <% if @localler != current_user.localler && @user.meetings.where(localler: @localler).any? %>
-          <div class="meeting-notice">
-            <p>You're meeting <%= @localler.user.username %> on <%= @user.meetings.where(localler: @localler).last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @user.meetings.where(localler: @localler).last.location %></p>
-          </div>
-        <% end %>
+      <% if @localler == current_user.localler && @localler_meetings.any?  %>
+        <div class="meeting-notice">
+          <p>You're meeting <%= @user.username %> on <%= @localler_meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @localler_meetings.last.location %></p>
+        </div>
+      <% end %>
+
+      <% if @localler != current_user.localler && @user_meetings.any? %>
+        <div class="meeting-notice">
+          <p>You're meeting <%= @localler.user.username %> on <%= @user_meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= @user_meetings.last.location %></p>
+        </div>
+      <% end %>
 
 
       <div class="messages" data-chat-subscription-target="messages">
@@ -59,18 +65,26 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
 
-              <div class="modal-body">
-                <%= simple_form_for [@localler, @meeting] do |f| %>
-                    <%= f.input :time,
-                    as: :string,
-                    input_html: { data: { controller: "datepicker" } } %>
-                    <%= f.hidden_field :chat_id, value: @chat.id %>
-                    <%= f.input :location, label: "Location" %>
-                    <%= f.button :submit, "Confirm", class: "black-button text-light" %>
-                  <% end %>
-              </div>
-            </div>
-          </div>
+
+  <button type="button" class="green-button-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Meet up with <%= @user.username %>!
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm your meet up with <%= @user.username %>:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for [@localler, @meeting] do |f| %>
+              <%= f.input :time,
+              as: :string,
+              input_html: { data: { controller: "datepicker" } } %>
+              <%= f.hidden_field :chat_id, value: @chat.id %>
+              <%= f.input :location, label: "Location" %>
+              <%= f.button :submit, "Confirm", class: "black-button-chat" %>
+            <% end %>
         </div>
       <% end %>
     </div>
