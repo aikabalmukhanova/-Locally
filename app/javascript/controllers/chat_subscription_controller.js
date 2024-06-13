@@ -10,7 +10,8 @@ export default class extends Controller {
   connect() {
     this.subscription = createConsumer().subscriptions.create(
       { channel: "ChatChannel", id: this.idValue },
-      { received: data => this.#insertMessageAndScrollDown(data) }
+      { received: data => this.#insertMessageAndScrollDown(data) },
+      this.#scrollToBottom()
   )
   }
 
@@ -23,6 +24,8 @@ export default class extends Controller {
     const messageElement = this.#buildMessageElement(currentUserIsSender, data.message)
     this.messagesTarget.insertAdjacentHTML("beforeend", messageElement)
     this.messagesTarget.scrollTo(0, this.messagesTarget.scrollHeight)
+    this.#scrollToBottom()
+
   }
 
   #buildMessageElement(currentUserIsSender, message) {
@@ -41,5 +44,9 @@ export default class extends Controller {
 
   #userStyleClass(currentUserIsSender) {
     return currentUserIsSender ? "sender-style" : "receiver-style"
+  }
+
+  #scrollToBottom() {
+    this.messagesTarget.scrollTo(0, this.messagesTarget.scrollHeight)
   }
 }
