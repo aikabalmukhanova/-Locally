@@ -22,6 +22,14 @@ history = Activity.create!(title: 'History & Heritage')
 
 puts "Creating users..."
 
+hiroshi_sato = User.create!(email: 'hiroshi.sato@locally.com', password: '123456', username: 'Hiroshi Sato', bio: "Art enthusiast from Tokyo who enjoys exploring unique art scenes and vibrant shopping districts.")
+maria_oliveira = User.create!(email: 'maria.oliveira@locally.com', password: '123456', username: 'Maria Oliveira', bio: "Lover of nightlife from Rio de Janeiro, eager to show you the city's vibrant night scene and beautiful outdoors.")
+elena_smirnova = User.create!(email: 'elena.smirnova@locally.com', password: '123456', username: 'Elena Smirnova', bio: "Museum aficionado from Moscow, passionate about art and history.")
+sophie_martin = User.create!(email: 'sophie.martin@locally.com', password: '123456', username: 'Sophie Martin', bio: "Shopping expert from Paris, ready to guide you through the city's best boutiques and unique art galleries.")
+giulia_rossi = User.create!(email: 'giulia.rossi@locally.com', password: '123456', username: 'Giulia Rossi', bio: "Food and wine lover from Rome, excited to share Italian culinary delights and the city's rich history.")
+jack_wilson = User.create!(email: 'jack.wilson@locally.com', password: '123456', username: 'Jack Wilson', bio: "Outdoor enthusiast from Vancouver, passionate about nature and adventure.")
+lucy_williams = User.create!(email: 'lucy.williams@locally.com', password: '123456', username: 'Lucy Williams', bio: "Art lover from New York, excited to explore the city's vibrant art scene and unique shopping experiences.")
+miguel_garcia = User.create!(email: 'miguel.garcia@locally.com', password: '123456', username: 'Miguel Garcia', bio: "History enthusiast from Madrid who loves sharing stories about the city's past and its vibrant nightlife.")
 guillaume = User.create!(email: 'guillaume@locally.com', password: '123456', username: 'Guillaume Verlooy', bio: "I'm a tech-savvy traveler, exploring the world while coding my way to new adventures.")
 luk = User.create!(email: 'luk@locally.com', password: '123456', username: 'Luk Triquet', bio: "I combine my love for tech and travel, capturing journeys through innovative gadgets.")
 mathieu = User.create!(email: 'mathieu@locally.com', password: '123456', username: 'Mathieu Heynen', bio: "As a digital nomad, I love discovering new places and the latest tech trends.")
@@ -34,14 +42,6 @@ hugo = User.create!(email: 'hugo@locally.com', password: '123456', username: 'Hu
 caroline = User.create!(email: 'caroline@locally.com', password: '123456', username: 'Caroline Deuse', bio: "I'm a tech lover and travel enthusiast, exploring cultures with the newest gadgets in hand.")
 emma_kim = User.create!(email: 'emma.kim@locally.com', password: '123456', username: 'Emma Kim', bio: "I am a food lover from Seoul, passionate about exploring the city's culinary delights and vibrant nightlife.")
 li_mei = User.create!(email: 'li.mei@locally.com', password: '123456', username: 'Li Mei', bio: "A local history buff from Beijing, passionate about sharing the city's ancient stories and unique art.")
-hiroshi_sato = User.create!(email: 'hiroshi.sato@locally.com', password: '123456', username: 'Hiroshi Sato', bio: "Art enthusiast from Tokyo who enjoys exploring unique art scenes and vibrant shopping districts.")
-maria_oliveira = User.create!(email: 'maria.oliveira@locally.com', password: '123456', username: 'Maria Oliveira', bio: "Lover of nightlife from Rio de Janeiro, eager to show you the city's vibrant night scene and beautiful outdoors.")
-elena_smirnova = User.create!(email: 'elena.smirnova@locally.com', password: '123456', username: 'Elena Smirnova', bio: "Museum aficionado from Moscow, passionate about art and history.")
-sophie_martin = User.create!(email: 'sophie.martin@locally.com', password: '123456', username: 'Sophie Martin', bio: "Shopping expert from Paris, ready to guide you through the city's best boutiques and unique art galleries.")
-giulia_rossi = User.create!(email: 'giulia.rossi@locally.com', password: '123456', username: 'Giulia Rossi', bio: "Food and wine lover from Rome, excited to share Italian culinary delights and the city's rich history.")
-jack_wilson = User.create!(email: 'jack.wilson@locally.com', password: '123456', username: 'Jack Wilson', bio: "Outdoor enthusiast from Vancouver, passionate about nature and adventure.")
-lucy_williams = User.create!(email: 'lucy.williams@locally.com', password: '123456', username: 'Lucy Williams', bio: "Art lover from New York, excited to explore the city's vibrant art scene and unique shopping experiences.")
-miguel_garcia = User.create!(email: 'miguel.garcia@locally.com', password: '123456', username: 'Miguel Garcia', bio: "History enthusiast from Madrid who loves sharing stories about the city's past and its vibrant nightlife.")
 anna_schneider = User.create!(email: 'anna.schneider@locally.com', password: '123456', username: 'Anna Schneider', bio: "Art and history lover from Berlin, passionate about museums and vibrant nightlife.")
 david_smith = User.create!(email: 'david.smith@locally.com', password: '123456', username: 'David Smith', bio: "Nightlife aficionado from London, ready to show you the best spots for an unforgettable night.")
 isabelle_dubois = User.create!(email: 'isabelle.dubois@locally.com', password: '123456', username: 'Isabelle Dubois', bio: "Museum lover from Montreal, passionate about art and history.")
@@ -145,18 +145,6 @@ elena_popova = User.create!(email: 'elena.popova@locally.com', password: '123456
 
 puts "Loading profile pics..."
 
-avatar_guillaume = URI.open("https://avatars.githubusercontent.com/u/166691058?v=4")
-avatar_luk = URI.open("https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1713302532/jxs9twp0kbtmkk73nwbt.jpg")
-avatar_mathieu = URI.open("https://media.licdn.com/dms/image/C4E03AQHo2YkZrhIaJA/profile-displayphoto-shrink_400_400/0/1517020425940?e=1723680000&v=beta&t=OpiA8kepa2tQ2Eqsatm8muKwgNqVVJhRpBrWFmkON1g")
-avatar_aika = URI.open("https://avatars.githubusercontent.com/u/108080915?v=4")
-avatar_pedro = URI.open("https://avatars.githubusercontent.com/u/166991937?v=4")
-avatar_bruna = URI.open("https://avatars.githubusercontent.com/u/162796074?v=4")
-avatar_aude = URI.open("https://avatars.githubusercontent.com/u/163596389?v=4")
-avatar_kenta = URI.open("https://avatars.githubusercontent.com/u/166846379?v=4")
-avatar_hugo = URI.open("https://avatars.githubusercontent.com/u/167010398?v=4")
-avatar_caroline = URI.open("https://images.unsplash.com/photo-1496360784265-52a2509684f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjY2fHxyYW5kb20lMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D")
-avatar_emma_kim = URI.open("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
-avatar_li_mei = URI.open("https://avatars.githubusercontent.com/u/135339304?v=4")
 avatar_hiroshi_sato = URI.open("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
 avatar_maria_oliveira = URI.open("https://plus.unsplash.com/premium_photo-1686777551229-d8eca134c66e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
 avatar_elena_smirnova = URI.open("https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
@@ -165,6 +153,18 @@ avatar_giulia_rossi = URI.open("https://images.unsplash.com/photo-1488426862026-
 avatar_jack_wilson = URI.open("https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
 avatar_lucy_williams = URI.open("https://images.unsplash.com/photo-1530785602389-07594beb8b73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
 avatar_miguel_garcia = URI.open("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_guillaume = URI.open("https://avatars.githubusercontent.com/u/166691058?v=4")
+avatar_luk = URI.open("https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1713302532/jxs9twp0kbtmkk73nwbt.jpg")
+avatar_mathieu = URI.open("https://media.licdn.com/dms/image/C4E03AQHo2YkZrhIaJA/profile-displayphoto-shrink_400_400/0/1517020425940?e=1723680000&v=beta&t=OpiA8kepa2tQ2Eqsatm8muKwgNqVVJhRpBrWFmkON1g")
+avatar_aika = URI.open("https://avatars.githubusercontent.com/u/108080915?v=4")
+avatar_pedro = URI.open("https://ca.slack-edge.com/T02NE0241-U01BPJHM02Y-9b833d9f20d1-512")
+avatar_bruna = URI.open("https://avatars.githubusercontent.com/u/162796074?v=4")
+avatar_aude = URI.open("https://avatars.githubusercontent.com/u/163596389?v=4")
+avatar_kenta = URI.open("https://avatars.githubusercontent.com/u/166846379?v=4")
+avatar_hugo = URI.open("https://avatars.githubusercontent.com/u/167010398?v=4")
+avatar_caroline = URI.open("https://ca.slack-edge.com/T02NE0241-U06DUCQK8TB-fa9f85cfeeb9-512")
+avatar_emma_kim = URI.open("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
+avatar_li_mei = URI.open("https://avatars.githubusercontent.com/u/135339304?v=4")
 avatar_anna_schneider = URI.open("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
 avatar_david_smith = URI.open("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww")
 avatar_isabelle_dubois = URI.open("https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
@@ -266,6 +266,14 @@ avatar_ana_martinez = URI.open("https://images.unsplash.com/photo-1445384763658-
 avatar_antonio_moreno = URI.open("https://images.unsplash.com/photo-1518799175676-a0fed7996acb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
 avatar_giorgio_rossi = URI.open("https://images.unsplash.com/photo-1518799175676-a0fed7996acb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D")
 
+emma_kim.profile_picture.attach(io: avatar_emma_kim, filename: "emma_kim.png", content_type: "image/png")
+li_mei.profile_picture.attach(io: avatar_li_mei, filename: "li_mei.png", content_type: "image/png")
+hiroshi_sato.profile_picture.attach(io: avatar_hiroshi_sato, filename: "hiroshi_sato.png", content_type: "image/png")
+maria_oliveira.profile_picture.attach(io: avatar_maria_oliveira, filename: "maria_oliveira.png", content_type: "image/png")
+elena_smirnova.profile_picture.attach(io: avatar_elena_smirnova, filename: "elena_smirnova.png", content_type: "image/png")
+sophie_martin.profile_picture.attach(io: avatar_sophie_martin, filename: "sophie_martin.png", content_type: "image/png")
+giulia_rossi.profile_picture.attach(io: avatar_giulia_rossi, filename: "giulia_rossi.png", content_type: "image/png")
+jack_wilson.profile_picture.attach(io: avatar_jack_wilson, filename: "jack_wilson.png", content_type: "image/png")
 guillaume.profile_picture.attach(io: avatar_guillaume, filename: "guy.png", content_type: "image/png")
 luk.profile_picture.attach(io: avatar_luk, filename: "luk.jpg", content_type: "image/jpg")
 mathieu.profile_picture.attach(io: avatar_mathieu, filename: "mathieu.jpg", content_type: "image/jpg")
@@ -276,14 +284,6 @@ aude.profile_picture.attach(io: avatar_aude, filename: "aude.png", content_type:
 kenta.profile_picture.attach(io: avatar_kenta, filename: "kenta.png", content_type: "image/png")
 hugo.profile_picture.attach(io: avatar_hugo, filename: "hugo.png", content_type: "image/png")
 caroline.profile_picture.attach(io: avatar_caroline, filename: "caroline.png", content_type: "image/png")
-emma_kim.profile_picture.attach(io: avatar_emma_kim, filename: "emma_kim.png", content_type: "image/png")
-li_mei.profile_picture.attach(io: avatar_li_mei, filename: "li_mei.png", content_type: "image/png")
-hiroshi_sato.profile_picture.attach(io: avatar_hiroshi_sato, filename: "hiroshi_sato.png", content_type: "image/png")
-maria_oliveira.profile_picture.attach(io: avatar_maria_oliveira, filename: "maria_oliveira.png", content_type: "image/png")
-elena_smirnova.profile_picture.attach(io: avatar_elena_smirnova, filename: "elena_smirnova.png", content_type: "image/png")
-sophie_martin.profile_picture.attach(io: avatar_sophie_martin, filename: "sophie_martin.png", content_type: "image/png")
-giulia_rossi.profile_picture.attach(io: avatar_giulia_rossi, filename: "giulia_rossi.png", content_type: "image/png")
-jack_wilson.profile_picture.attach(io: avatar_jack_wilson, filename: "jack_wilson.png", content_type: "image/png")
 lucy_williams.profile_picture.attach(io: avatar_lucy_williams, filename: "lucy_williams.png", content_type: "image/png")
 miguel_garcia.profile_picture.attach(io: avatar_miguel_garcia, filename: "miguel_garcia.png", content_type: "image/png")
 anna_schneider.profile_picture.attach(io: avatar_anna_schneider, filename: "anna_schneider.png", content_type: "image/png")
@@ -388,6 +388,14 @@ antonio_moreno.profile_picture.attach(io: avatar_antonio_moreno, filename: "anto
 giorgio_rossi.profile_picture.attach(io: avatar_giorgio_rossi, filename: "giorgio_rossi.png", content_type: "image/png")
 
 
+hiroshi_sato.save
+maria_oliveira.save
+elena_smirnova.save
+sophie_martin.save
+giulia_rossi.save
+jack_wilson.save
+lucy_williams.save
+miguel_garcia.save
 guillaume.save
 luk.save
 mathieu.save
@@ -400,14 +408,6 @@ hugo.save
 caroline.save
 emma_kim.save
 li_mei.save
-hiroshi_sato.save
-maria_oliveira.save
-elena_smirnova.save
-sophie_martin.save
-giulia_rossi.save
-jack_wilson.save
-lucy_williams.save
-miguel_garcia.save
 anna_schneider.save
 david_smith.save
 isabelle_dubois.save
@@ -511,22 +511,20 @@ giorgio_rossi.save
 
 puts "Creating locallers..."
 
-guillaumel = Localler.create!(description: "Hello, I'm Guillaume from Brussels. As a passionate food lover and museum enthusiast, I enjoy exploring the culinary delights and rich art history of this beautiful city. Join me for a day of museum-hopping and taste the best of Belgian cuisine. I can guide you through hidden gems and share fascinating stories behind the art and food scenes in Brussels.", availability: true, location: 'Brussels', user: guillaume)
-lukl = Localler.create!(description: "Hi, I'm Luk from Paris. I have a deep love for art and the outdoors. Whether it's a stroll through the city's iconic parks or a visit to lesser-known art galleries, I'm here to make your Paris experience unique and memorable. Let me show you the artistic soul of Paris, combined with refreshing outdoor activities that will give you a perfect blend of culture and nature.", availability: true, location: 'Paris', user: luk)
-mathieul = Localler.create!(description: "Ciao, I'm Mathieu from Rome. If you're looking to experience the best of Roman shopping and nightlife, I'm your guide. I know all the chic boutiques and the hottest spots in town for an unforgettable night out. Join me for a day of retail therapy followed by an evening of vibrant nightlife, where ancient history meets modern fun.", availability: true, location: 'Rome', user: mathieu)
-aikal = Localler.create!(description: "Hola, I'm Aika from Barcelona. With a passion for history and nightlife, I can show you the most fascinating historical sites during the day and the best nightlife spots by night. Barcelona's rich cultural heritage and lively nightlife scene are at your fingertips with me as your guide. Discover the secrets of this amazing city and party like a local.", availability: true, location: 'Barcelona', user: aika)
 pedrol = Localler.create!(description: "Hi, I'm Pedro from Bilbao. I love combining outdoor adventures with art and food. Let me take you on a journey through Bilbao's stunning landscapes, vibrant art scene, and delectable cuisine. Whether it's a hike in the mountains or a visit to the Guggenheim, followed by tasting pintxos, you'll get a taste of the best Bilbao has to offer.", availability: true, location: 'Bilbao', user: pedro)
+yuki_tanakal = Localler.create!(description: "Kyoto is the heart of traditional Japan. Join me to savor the best of Japanese cuisine and explore historic temples and gardens that showcase our rich cultural heritage.", availability: true, location: "Shijo-dori, Kyoto, Japan", user: yuki_tanaka)
+peter_johnsonl = Localler.create!(description: "Cape Town offers breathtaking natural beauty and adventure sports. Join me to explore Table Mountain, go hiking, surfing, and more for an unforgettable outdoor experience.", availability: true, location: "Long Street, Cape Town, South Africa", user: peter_johnson)
 brunal = Localler.create!(description: "Hello, I'm Bruna from Madrid. Shopping and the great outdoors are my passions. I'll take you to the best shopping districts and then unwind with outdoor activities in Madrid's beautiful parks. Experience the hustle and bustle of the city and the tranquility of nature, all in one day with me as your guide. Let's explore Madrid's unique blend of urban and natural beauty.", availability: true, location: 'Madrid', user: bruna)
+sophie_martinl = Localler.create!(description: "Paris is a shopper's paradise and a hub for art lovers. Join me to explore high-end fashion stores, charming boutiques, hidden markets, and unique art galleries where you can find unique items and great deals.", availability: true, location: "Champs-Élysées, Paris, France", user: sophie_martin)
 audel = Localler.create!(description: "Olá, I'm Aude from Lisbon. My heart beats for art and food. Discover Lisbon's artistic heritage through its galleries and street art, and savor the delicious local cuisine with me. From traditional dishes to modern culinary delights, I know where to find the best eats. Join me for an artistic and gastronomic adventure in the charming streets of Lisbon.", availability: true, location: 'Lisbon', user: aude)
 kental = Localler.create!(description: "Hi, I'm Kenta from Berlin. If you're looking to dive into Berlin's legendary nightlife and food scene, look no further. I'll guide you through the best clubs, bars, and food spots in the city. From trendy street food markets to upscale dining, followed by an unforgettable night out, Berlin's vibrant energy awaits you. Let's explore the city's dynamic culture together.", availability: true, location: 'Berlin', user: kenta)
 hugol = Localler.create!(description: "Hallo, I'm Hugo from Amsterdam. As a fan of shopping and history, I can show you the best of both worlds in this amazing city. Discover Amsterdam's rich history through its museums and historical sites, and enjoy a shopping spree in its trendy boutiques. With me, you'll get to experience the city's unique charm and vibrant past while indulging in some retail therapy.", availability: true, location: 'Amsterdam', user: hugo)
 carolinel = Localler.create!(description: "Hi, I'm Caroline from London. I adore museums and food, and I can't wait to share London's treasures with you. From world-class museums to hidden culinary gems, I'll guide you through the best experiences the city has to offer. Whether you're a history buff or a foodie, you'll love exploring London with me. Let's make your visit truly unforgettable.", availability: true, location: 'London', user: caroline)
-emma_kiml = Localler.create!(description: "Welcome to Seoul! Join me in experiencing the rich culinary heritage of Korea and enjoying its vibrant nightlife. From street food to high-end restaurants and lively nightspots, I will guide you through a memorable journey.", availability: true, location: "Itaewon-ro, Seoul, South Korea", user: emma_kim)
 li_meil = Localler.create!(description: "Beijing is a city where the past meets the present. Let me take you through the historic sites, including the Forbidden City and the Great Wall, and explore unique art galleries that reveal the stories that shaped our culture.", availability: true, location: "Chang'an Avenue, Beijing, China", user: li_mei)
 hiroshi_satol = Localler.create!(description: "Tokyo is a hub for contemporary and traditional art. Join me to explore hidden art galleries, vibrant street art, and bustling shopping districts for a truly unique experience.", availability: true, location: "Ginza, Tokyo, Japan", user: hiroshi_sato)
 maria_oliveiral = Localler.create!(description: "Experience the excitement of Rio's nightlife and beautiful outdoors! From samba clubs to beach parties and scenic hikes, I'll guide you through the best spots to enjoy music, dance, and nature.", availability: true, location: "Copacabana, Rio de Janeiro, Brazil", user: maria_oliveira)
 elena_smirnoval = Localler.create!(description: "Explore Moscow's rich cultural heritage with me. We'll visit the top museums, including the State Historical Museum and the Tretyakov Gallery, and dive deep into Russian art and history.", availability: true, location: "Arbat Street, Moscow, Russia", user: elena_smirnova)
-sophie_martinl = Localler.create!(description: "Paris is a shopper's paradise and a hub for art lovers. Join me to explore high-end fashion stores, charming boutiques, hidden markets, and unique art galleries where you can find unique items and great deals.", availability: true, location: "Champs-Élysées, Paris, France", user: sophie_martin)
+guillaumel = Localler.create!(description: "Hello, I'm Guillaume from Brussels. As a passionate food lover and museum enthusiast, I enjoy exploring the culinary delights and rich art history of this beautiful city. Join me for a day of museum-hopping and taste the best of Belgian cuisine. I can guide you through hidden gems and share fascinating stories behind the art and food scenes in Brussels.", availability: true, location: 'Brussels', user: guillaume)
 giulia_rossil = Localler.create!(description: "Join me in Rome to savor the best Italian food and wine and explore the city's rich history. From local trattorias to famous restaurants and historic sites, I'll ensure you have a delicious and memorable experience.", availability: true, location: "Via del Corso, Rome, Italy", user: giulia_rossi)
 jack_wilsonl = Localler.create!(description: "Vancouver is a paradise for nature lovers. Join me for an adventure through its stunning parks, mountains, and coastline, offering the best outdoor activities and breathtaking views.", availability: true, location: "Granville Street, Vancouver, Canada", user: jack_wilson)
 lucy_williamsl = Localler.create!(description: "New York is a mecca for art enthusiasts and shoppers. Let me show you the best art galleries, street art, museums, and unique shopping spots, including the iconic MoMA and MET.", availability: true, location: "Broadway, New York, USA", user: lucy_williams)
@@ -534,14 +532,14 @@ miguel_garcial = Localler.create!(description: "Madrid is rich in history and cu
 anna_schneiderl = Localler.create!(description: "Berlin is a treasure trove of art and history with a vibrant nightlife. Join me to explore its renowned museums and galleries, including the Pergamon Museum and the East Side Gallery, and enjoy the city's vibrant night scene.", availability: true, location: "Unter den Linden, Berlin, Germany", user: anna_schneider)
 david_smithl = Localler.create!(description: "London's nightlife is second to none. Let me guide you through the best pubs, clubs, and music venues for a moment to remember. Discovering the locals party place is my pleasure.", availability: true, location: "Piccadilly, London, UK", user: david_smith)
 isabelle_duboisl = Localler.create!(description: "Montreal is a city rich in art and history. Join me to explore its top museums, including the Montreal Museum of Fine Arts and the Pointe-à-Callière Museum, and dive into the city's vibrant cultural scene.", availability: true, location: "Saint Catherine Street, Montreal, Canada", user: isabelle_dubois)
-peter_johnsonl = Localler.create!(description: "Cape Town offers breathtaking natural beauty and adventure sports. Join me to explore Table Mountain, go hiking, surfing, and more for an unforgettable outdoor experience.", availability: true, location: "Long Street, Cape Town, South Africa", user: peter_johnson)
 ana_mendezl = Localler.create!(description: "Mexico City is a paradise for foodies and night owls. Let me guide you through its vibrant street food scene, top restaurants, and lively nightspots for an unforgettable experience.", availability: true, location: " Reforma Avenue, Mexico City, Mexico", user: ana_mendez)
+lukl = Localler.create!(description: "Hi, I'm Luk from Paris. I have a deep love for art and the outdoors. Whether it's a stroll through the city's iconic parks or a visit to lesser-known art galleries, I'm here to make your Paris experience unique and memorable. Let me show you the artistic soul of Paris, combined with refreshing outdoor activities that will give you a perfect blend of culture and nature.", availability: true, location: 'Paris', user: luk)
 john_clarkl = Localler.create!(description: "Washington D.C. is a city steeped in history and culture. Join me to explore the Smithsonian museums, monuments, and historic sites that tell the story of America's past.", availability: true, location: "Independence Avenue, Washington D.C., USA", user: john_clark)
 hannah_murphyl = Localler.create!(description: "Dublin is alive with art and nightlife. Let's explore its vibrant galleries, street art, and lively pubs and clubs for an unforgettable experience.", availability: true, location: "Temple Bar, Dublin, Ireland", user: hannah_murphy)
-yuki_tanakal = Localler.create!(description: "Kyoto is the heart of traditional Japan. Join me to savor the best of Japanese cuisine and explore historic temples and gardens that showcase our rich cultural heritage.", availability: true, location: "Shijo-dori, Kyoto, Japan", user: yuki_tanaka)
 michael_brownl = Localler.create!(description: "Sydney offers stunning natural landscapes and thrilling outdoor activities. Let's explore the beaches, national parks, and enjoy activities like surfing, hiking, and more.", availability: true, location: "Bondi Beach, Sydney, Australia", user: michael_brown)
 camila_silval = Localler.create!(description: "São Paulo is known for its vibrant nightlife and shopping. Join me to explore the best clubs, bars, and shopping districts for an exciting experience.", availability: true, location: "Avenida Paulista, São Paulo, Brazil", user: camila_silva)
 pierre_dupontl = Localler.create!(description: "Bordeaux is famous for its wine, food, and history. Let me guide you through the best wine tasting experiences, gourmet restaurants, and historic sites in this beautiful city.", availability: true, location: "Rue Sainte-Catherine, Bordeaux, France", user: pierre_dupont)
+mathieul = Localler.create!(description: "Ciao, I'm Mathieu from Rome. If you're looking to experience the best of Roman shopping and nightlife, I'm your guide. I know all the chic boutiques and the hottest spots in town for an unforgettable night out. Join me for a day of retail therapy followed by an evening of vibrant nightlife, where ancient history meets modern fun.", availability: true, location: 'Rome', user: mathieu)
 sara_nilssonl = Localler.create!(description: "Stockholm offers a mix of culture and modernity. Join me to explore top museums, like the Vasa Museum, and discover the best shopping spots in this beautiful city.", availability: true, location: "Drottninggatan, Stockholm, Sweden", user: sara_nilsson)
 raj_patell = Localler.create!(description: "Mumbai is a melting pot of cultures and cuisines. Join me to explore its historic sites, vibrant street food, and hidden gems that make this city unique.", availability: true, location: "Marine Drive, Mumbai, India", user: raj_patel)
 julia_kovacsl = Localler.create!(description: "Budapest is a city rich in art and history. Let's explore its top museums, including the Hungarian National Gallery, and discover unique art galleries and historic sites.", availability: true, location: "Andrássy Avenue, Budapest, Hungary", user: julia_kovacs)
@@ -551,11 +549,13 @@ liam_chenl = Localler.create!(description: "Taipei is a food lover's paradise an
 sophie_tremblayl = Localler.create!(description: "Quebec City is full of history and charm. Join me to explore its historic sites, such as the Old City and Citadelle, and visit the best museums to learn about our rich cultural heritage.", availability: true, location: "Rue Saint-Jean, Quebec City, Canada", user: sophie_tremblay)
 omar_al_farsil = Localler.create!(description: "Dubai is a city of luxury and culture. Let me guide you through its top art galleries, iconic shopping malls, and unique cultural experiences for a truly memorable visit.", availability: true, location: "Sheikh Zayed Road, Dubai, UAE", user: omar_al_farsi)
 emily_clarkel = Localler.create!(description: "Auckland is a paradise for nature lovers and foodies. Join me to explore stunning parks, beautiful beaches, and enjoy delicious local cuisine for an unforgettable experience.", availability: true, location: "Queen Street, Auckland, New Zealand", user: emily_clarke)
+aikal = Localler.create!(description: "Hola, I'm Aika from Barcelona. With a passion for history and nightlife, I can show you the most fascinating historical sites during the day and the best nightlife spots by night. Barcelona's rich cultural heritage and lively nightlife scene are at your fingertips with me as your guide. Discover the secrets of this amazing city and party like a local.", availability: true, location: 'Barcelona', user: aika)
 laura_martinezl = Localler.create!(description: "Lima is a city rich in history and culture. Let's explore its top museums, including the Larco Museum, and historic sites that reveal the story of this vibrant city.", availability: true, location: "Miraflores, Lima, Peru", user: laura_martinez)
 robert_halll = Localler.create!(description: "Chicago offers a vibrant nightlife and amazing food. Join me to explore the best bars, clubs, and restaurants for an unforgettable experience in the Windy City.", availability: true, location: "Michigan Avenue, Chicago, USA", user: robert_hall)
 anita_khanl = Localler.create!(description: "Istanbul is a city where East meets West. Join me to explore its historic sites, such as the Hagia Sophia and Topkapi Palace, and visit top museums to learn about our rich cultural heritage.", availability: true, location: "Sultanahmet, Istanbul, Turkey", user: anita_khan)
 kevin_leel = Localler.create!(description: "Hong Kong is a shopper's paradise and a food lover's dream. Join me to explore the best shopping districts and savor delicious local cuisine for a memorable experience.", availability: true, location: "Nathan Road, Hong Kong, China", user: kevin_lee)
 elena_romanovl = Localler.create!(description: "Prague is a city rich in art and history. Let's explore its top museums, like the National Gallery, and discover unique art galleries and historic sites that tell the story of this beautiful city.", availability: true, location: "Charles Bridge, Prague, Czech Republic", user: elena_romanov)
+emma_kiml = Localler.create!(description: "Welcome to Seoul! Join me in experiencing the rich culinary heritage of Korea and enjoying its vibrant nightlife. From street food to high-end restaurants and lively nightspots, I will guide you through a memorable journey.", availability: true, location: "Itaewon-ro, Seoul, South Korea", user: emma_kim)
 james_wrightl = Localler.create!(description: "San Francisco offers stunning natural beauty and vibrant nightlife. Join me to explore its parks, scenic views, and enjoy the best clubs and bars for an unforgettable experience.", availability: true, location: "Market Street, San Francisco, USA", user: james_wright)
 amilia_rodriguezl = Localler.create!(description: "Buenos Aires is famous for its delicious food and vibrant nightlife. Let me guide you through the best restaurants, bars, and clubs for an unforgettable experience.", availability: true, location: "Palermo, Buenos Aires, Argentina", user: amilia_rodriguez)
 alexander_ivankovl = Localler.create!(description: "Moscow is a city steeped in history and art. Join me to explore its iconic landmarks, such as the Kremlin and Red Square, and discover the rich cultural heritage of Russia.", availability: true, location: "Tverskaya Street, Moscow, Russia", user: alexander_ivankov)
@@ -637,50 +637,6 @@ puts "Creating localler_activities..."
 
 localler_activities = [
 
-  { localler: guillaumel, activity: museum },
-  { localler: guillaumel, activity: food },
-  { localler: guillaumel, activity: nightlife },
-  { localler: guillaumel, activity: outdoors },
-  { localler: lukl, activity: art },
-  { localler: lukl, activity: museum },
-  { localler: lukl, activity: outdoors },
-  { localler: lukl, activity: history },
-  { localler: lukl, activity: unique },
-  { localler: lukl, activity: food },
-  { localler: mathieul, activity: nightlife },
-  { localler: mathieul, activity: shopping },
-  { localler: mathieul, activity: art },
-  { localler: mathieul, activity: museum },
-  { localler: aikal, activity: history },
-  { localler: aikal, activity: nightlife },
-  { localler: aikal, activity: shopping },
-  { localler: aikal, activity: art },
-  { localler: aikal, activity: food },
-  { localler: pedrol, activity: outdoors },
-  { localler: pedrol, activity: art },
-  { localler: pedrol, activity: food },
-  { localler: pedrol, activity: nightlife },
-  { localler: brunal, activity: unique },
-  { localler: brunal, activity: outdoors },
-  { localler: brunal, activity: shopping },
-  { localler: audel, activity: art },
-  { localler: audel, activity: food },
-  { localler: audel, activity: shopping },
-  { localler: kental, activity: museum },
-  { localler: kental, activity: art },
-  { localler: kental, activity: food },
-  { localler: kental, activity: nightlife },
-  { localler: hugol, activity: shopping },
-  { localler: hugol, activity: history },
-  { localler: hugol, activity: outdoors },
-  { localler: carolinel, activity: museum },
-  { localler: carolinel, activity: food },
-  { localler: emma_kiml, activity: food },
-  { localler: emma_kiml, activity: nightlife },
-  { localler: emma_kiml, activity: shopping },
-  { localler: li_meil, activity: history },
-  { localler: li_meil, activity: art },
-  { localler: li_meil, activity: museum },
   { localler: hiroshi_satol, activity: art },
   { localler: hiroshi_satol, activity: shopping },
   { localler: hiroshi_satol, activity: food },
@@ -717,6 +673,48 @@ localler_activities = [
   { localler: david_smithl, activity: nightlife },
   { localler: david_smithl, activity: food },
   { localler: david_smithl, activity: shopping },
+  { localler: guillaumel, activity: museum },
+  { localler: guillaumel, activity: food },
+  { localler: guillaumel, activity: nightlife },
+  { localler: guillaumel, activity: outdoors },
+  { localler: lukl, activity: art },
+  { localler: lukl, activity: museum },
+  { localler: lukl, activity: history },
+  { localler: lukl, activity: food },
+  { localler: mathieul, activity: nightlife },
+  { localler: mathieul, activity: shopping },
+  { localler: mathieul, activity: art },
+  { localler: mathieul, activity: museum },
+  { localler: aikal, activity: history },
+  { localler: aikal, activity: nightlife },
+  { localler: aikal, activity: shopping },
+  { localler: aikal, activity: art },
+  { localler: aikal, activity: food },
+  { localler: pedrol, activity: outdoors },
+  { localler: pedrol, activity: art },
+  { localler: pedrol, activity: food },
+  { localler: pedrol, activity: nightlife },
+  { localler: brunal, activity: unique },
+  { localler: brunal, activity: outdoors },
+  { localler: brunal, activity: shopping },
+  { localler: audel, activity: art },
+  { localler: audel, activity: food },
+  { localler: audel, activity: shopping },
+  { localler: kental, activity: museum },
+  { localler: kental, activity: art },
+  { localler: kental, activity: food },
+  { localler: kental, activity: nightlife },
+  { localler: hugol, activity: shopping },
+  { localler: hugol, activity: history },
+  { localler: hugol, activity: outdoors },
+  { localler: carolinel, activity: museum },
+  { localler: carolinel, activity: food },
+  { localler: emma_kiml, activity: food },
+  { localler: emma_kiml, activity: nightlife },
+  { localler: emma_kiml, activity: shopping },
+  { localler: li_meil, activity: history },
+  { localler: li_meil, activity: art },
+  { localler: li_meil, activity: museum },
   { localler: isabelle_duboisl, activity: museum },
   { localler: isabelle_duboisl, activity: art },
   { localler: isabelle_duboisl, activity: history },
