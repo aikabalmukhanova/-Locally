@@ -73,14 +73,13 @@
   padding-left: 0;
 }
 
-.navabar {
+.navbar {
   .optional {
     margin-bottom: 0 !important;
   }
 
   .container-fluid {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    --bs-gutter-x: 2rem;
   }
 }
 

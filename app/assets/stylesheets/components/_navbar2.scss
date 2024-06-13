@@ -5,6 +5,10 @@
   position: sticky;
   width: 100%;
   align-items: center;
+
+  .container-fluid {
+    --bs-gutter-x: 2rem;
+  }
 }
 
 .navbar-2 h3 {
