@@ -1,6 +1,7 @@
 class ChatsController < ApplicationController
   def index
-    @chats = current_user.chats.includes(:user) + current_user.localler.chats.includes(:localler)
+    @chats = current_user.chats.includes(:user)
+    @chats = current_user.chats.includes(:user) + current_user.localler.chats.includes(:localler) if current_user.localler
   end
 
   def show
