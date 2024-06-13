@@ -190,12 +190,12 @@
 }
 
 #send-button:disabled {
-  border: none;
+  border: 1px solid #F0EBE5;
   opacity: 0.3;
 }
 
 #send-button:active, #send-button:focus, #send-button:hover, #send-button:visited,  #send-button:focus-visible, #send-button:focus-within, #send-button:active:target {
-  border: none !important;
+  border: 1px solid #F0EBE5;
 }
 
 .dropdown-menu {
