@@ -22,10 +22,12 @@ export default class extends Controller {
 
     if (checkbox.checked === true ) {
       this.labelTarget.innerText = "online";
-      this.labelTarget.classList.remove("form-check-label-unavailable")
+      this.labelTarget.classList.remove("form-check-label");
+      this.labelTarget.classList.remove("form-check-label-unavailable");
       this.labelTarget.classList.add("form-check-label-available");
     } else {
       this.labelTarget.innerText = "offline";
+      this.labelTarget.classList.remove("form-check-label")
       this.labelTarget.classList.remove("form-check-label-available");
       this.labelTarget.classList.add("form-check-label-unavailable");
     }

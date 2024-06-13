@@ -11,7 +11,7 @@
           <% if Localler.where(user: current_user).any? %>
             <div class="d-flex flex-column align-items-center form-switch the-toggle me-2">
               <%= simple_form_for current_user.localler, data: {controller: "availability-toggle"} do |f| %>
-                <%= f.input :availability, as: :boolean, label: "test", id: "toggle-button", label_html: {data: { availability_toggle_target: "label"}}, input_html: { data: {action: "click->availability-toggle#available click->availability-toggle#toggleLabel"}, class:"toggle"} %>
+                <%= f.input :availability, as: :boolean, label: true, id: "toggle-button", label_html: {data: { availability_toggle_target: "label"}}, input_html: { data: {action: "click->availability-toggle#available click->availability-toggle#toggleLabel"}, class:"toggle"} %>
               <% end %>
             </div>
           <% elsif current_page?(new_localler_path) %>
