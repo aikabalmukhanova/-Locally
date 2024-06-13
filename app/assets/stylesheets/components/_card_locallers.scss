@@ -12,23 +12,27 @@
     font-size: 16px;
     padding-top: 0;
   }
+
   p {
+    color: #26271F;
     font-size: 12px;
     margin-bottom: 5px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
   }
+
   .my-button {
     color: #26271F;
     display: inline-flex;
     align-items: center;
     padding: 0;
     margin: 0;
-    height: fit-content;
-    font-weight: bold;
+    height: auto;
+    font-weight: semibold;
   }
+
   .avatar-card {
     height: auto;
     width: 85px;

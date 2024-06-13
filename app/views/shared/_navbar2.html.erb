@@ -15,6 +15,7 @@
                 <%= f.input :availability, as: :boolean, label: false, input_html: { data: {action: "click->availability-toggle#available"}, class:"toggle"} %>
               <% end %>
             </div>
+          <% elsif current_page?(new_localler_path) %>
           <% else %>
             <a href=""><%= link_to "Become a Localler", new_localler_path, class: "green-button-become" %></a>
           <% end %>
