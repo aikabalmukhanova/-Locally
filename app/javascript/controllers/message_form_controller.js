@@ -16,9 +16,4 @@ export default class extends Controller {
       this.buttonTarget.removeAttribute("disabled");
     }
   }
-
-  resetForm() {
-    this.inputTarget.value = "";
-    this.toggleButton();
-  }
 }

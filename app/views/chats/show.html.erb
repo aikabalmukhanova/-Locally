@@ -38,7 +38,7 @@
 
       <div>
         <%= simple_form_for [@chat, @message],
-        html: { data: { controller: "message-form", action: "turbo:submit-end->chat-subscription#resetForm" }, class: "mb-3 d-flex justify-content-center" } do |f| %>
+        html: { data: { controller: "message-form", action: "turbo:submit-end->chat-subscription#resetForm turbo:submit-end->message-form#toggleButton" }, class: "mb-3 d-flex justify-content-center" } do |f| %>
         <%= f.input :content,
           label: false,
           placeholder: "Message...",
