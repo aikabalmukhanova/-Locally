@@ -14,14 +14,14 @@ export default class extends Controller {
     this.element.submit(event)
   }
 
-//   toggleLabel(event) {
-//     const checkbox = event.target;
-//     const label = this.labelTarget;
+  toggleLabel(event) {
+    const checkbox = event.target;
+    const label = this.element.label
 
-//     if (checkbox.checked === true ) {
-//       label.textContent = "available";
-//     } else {
-//       label.textContent = "unavailable";
-//     }
-//   }
+    if (checkbox.checked === true ) {
+      label = "available";
+    } else {
+      label = "unavailable";
+    }
+  }
 }

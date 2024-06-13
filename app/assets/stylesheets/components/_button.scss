@@ -175,6 +175,10 @@
   opacity: 0.3;
 }
 
+#send-button:active, #send-button:focus, #send-button:hover, #send-button:visited,  #send-button:focus-visible, #send-button:focus-within, #send-button:active:target {
+  border: none !important;
+}
+
 .dropdown-menu {
   background-color: transparent;
   transition: 0.4s ease-in-out;
