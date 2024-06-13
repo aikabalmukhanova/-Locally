@@ -9,13 +9,11 @@
         <% if user_signed_in? %>
           <% if Localler.where(user: current_user).any? %>
             <div class="d-flex flex-column align-items-center form-switch the-toggle me-2">
-              <p class="toggle-title">available</p>
               <%= simple_form_for current_user.localler, data: {controller: "availability-toggle"} do |f| %>
-                <%= f.input :availability, as: :boolean, label: false, input_html: { data: {action: "click->availability-toggle#available"}, class:"toggle"} %>
+                <%= f.input :availability, as: :boolean, label: "#{current_user.localler.availability? ? "available" : "unavailable"}", id: "toggle-button", input_html: { data: {action: "click->availability-toggle#available"}, class:"toggle"} %>
               <% end %>
             </div>
           <% elsif current_page?(new_localler_path) %>
-
           <% else %>
             <a href=""><%= link_to "Become a Localler", new_localler_path, class: "green-button-become2" %></a>
           <% end %>
