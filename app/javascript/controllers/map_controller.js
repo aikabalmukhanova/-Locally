@@ -44,6 +44,7 @@ export default class extends Controller {
   }
 
   disconnect() {
-    this.map.onRemove()
+    console.log("disconnect")
+    this.map.remove()
   }
 }
