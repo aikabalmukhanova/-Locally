@@ -3,7 +3,7 @@
     <div class="messages-index">
       <div class="container">
 
-<h2><i class="fa-solid fa-envelope"></i> My Chats</h2>
+        <h2><i class="fa-solid fa-envelope"></i> My Chats</h2>
         <% if @chats.any? %>
           <% @chats.each do |chat| %>
             <div class="card card-chats">
@@ -16,15 +16,15 @@
                   <% end %>
                 </div>
 
-          <% if chat.meetings.any? %>
-            <div class="meeting-notice">
-              <% if current_user == chat.user %>
-                <p>You're meeting with <%= chat.localler.user.username %> on <%= chat.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= chat.meetings.last.location %></p>
-              <% else %>
-                <p>You're meeting with <%= chat.user.username %> on <%= chat.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= chat.meetings.last.location %></p>
-              <% end %>
-            </div>
-          <% end %>
+            <% if chat.meetings.any? %>
+              <div class="meeting-notice">
+                <% if current_user == chat.user %>
+                  <p>You're meeting with <%= chat.localler.user.username %> on <%= chat.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= chat.meetings.last.location %></p>
+                <% else %>
+                  <p>You're meeting with <%= chat.user.username %> on <%= chat.meetings.last.time.strftime("%A, %d %b %Y %l:%M %p") %> in <%= chat.meetings.last.location %></p>
+                <% end %>
+              </div>
+            <% end %>
 
                 <div class="text-center">
                   <%= link_to "Open chat", chat_path(chat), class:"green-button-chat w-100 mb-2" %>
