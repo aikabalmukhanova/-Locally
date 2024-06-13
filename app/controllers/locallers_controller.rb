@@ -54,6 +54,7 @@ class LocallersController < ApplicationController
   def update
     @localler = Localler.find(params[:id])
     @localler.update(localler_params)
+    redirect_to request.referer
   end
 
   private
