@@ -2,8 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="availability-toggle"
 export default class extends Controller {
-  static targets = ["toggle"]
-  // static targets = ["label"];
+  static targets = ["label"];
 
   connect() {
     console.log("Hello");
@@ -15,13 +14,20 @@ export default class extends Controller {
   }
 
   toggleLabel(event) {
+    console.log(this.labelTarget.innerText);
+    console.log(event);
+    console.log(event.target.checked);
     const checkbox = event.target;
-    const label = this.element.label
+  //   const label = this.element.label
 
     if (checkbox.checked === true ) {
-      label = "available";
+      this.labelTarget.innerText = "online";
+      this.labelTarget.classList.remove("form-check-label-unavailable")
+      this.labelTarget.classList.add("form-check-label-available");
     } else {
-      label = "unavailable";
+      this.labelTarget.innerText = "offline";
+      this.labelTarget.classList.remove("form-check-label-available");
+      this.labelTarget.classList.add("form-check-label-unavailable");
     }
   }
 }
