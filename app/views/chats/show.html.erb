@@ -5,7 +5,13 @@
       data-chat-subscription-id-value="<%= @chat.id %>"
       data-chat-subscription-current-user-id-value="<%= current_user.id %>">
 
-      <h2><%= @localler.user.username %></h2>
+      <h2>
+        <% if @localler != current_user.localler %>
+          <%= @localler.user.username %>
+        <% else %>
+          <%= @user.username %>
+        <% end %>
+      </h2>
 
 
       <% if @localler == current_user.localler && @localler_meetings.any?  %>
